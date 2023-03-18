@@ -11,6 +11,7 @@
     <!-- Boostrap 5.0.2 meta tag -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Normalize meta tag -->
     <link rel="stylesheet" href="../../css/normalize.css">
     <!-- estilos.css -->
@@ -21,20 +22,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="./media/img/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title> FF - Mice</title>
 </head>
 
 <body>
     <header class="header">
         <div class="header__social">
-            <ion-icon name="logo-facebook" class="fb-icon"></ion-icon>
-            <ion-icon name="logo-twitter" class="tw-icon"></ion-icon>
-            <ion-icon name="logo-instagram" class="ig-icon"></ion-icon>
-            <ion-icon name="logo-amazon" class="amz-icon"></ion-icon>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
         </div>
-        <nav class="navegacion-principal">
-            <div class="logo">
+    </header>
+    <!-- Nav -->
+    <nav class="navegacion-principal navbar navbar-expand-md">
+        <div class="container-fluid">
+            <!-- Logo empresa -->
+            <a class="logo navbar-brand" href="../../index.html">
                 <div class="logo__image"></div>
                 <div class="logo__brandName">
                     <p>Flows <b>Forward</b></p>
@@ -42,37 +46,41 @@
                 <div class="logo__tagline">
                     <p>Keep tracking</p>
                 </div>
-            </div> <!--Cierre de logo-->
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="../Products/mice.html">Mice</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../Products/mousepad.html">Mousepad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../info-about-us/about-us.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../info-about-us/contacts.html">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            </a> <!--Cierre de logo-->
+
+            <!-- Navbar -->
+            <div class="justify-content-fin navbar navbar-expand-lg" id="navbarToggleExternalContent">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../Products/mice.html">Mice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Products/mousepad.html">Mousepad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../info-about-us/about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../info-about-us/contacts.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <section class="mice-hero contenedor">
         <article class="mice-hero__imagen">
-            <h1>Mice</h1>
         </article>
     </section>
 
     <main class="main-content-mice">
         <div class="mice-content contenedor">
-            <div class="filter">
-                <h2>Filters</h2>
+
+            <div class="mice-content__filter">
+                <h2 class="filter__heading">Filters</h2>
                 <div class="filter-container">
                     <div class="label-input-1">
                         <input type="checkbox" name="pns">
@@ -88,8 +96,24 @@
                     </div>
                 </div>
             </div>
-            <section class="sorter-grid">
-                <div class="sort-selector">
+            <!-- Filter fin -->
+
+            <div class="grid-heading">
+                <div class="sorter__heading">
+                    <h1 class="sorter__title no-margin no-padding">Mice</h1>
+
+                    <p>Showing 1 - 6 of 6 products</p>
+                    <div class="sorter__label-input">
+                        <label for="howMany">Display: </label>
+                        <select name="howMany">
+                            <option value="6">6 per page</option>
+                            <option value="12">12 per page</option>
+                            <option value="24">24 per page</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="sort__selector">
                     <div class="label-input">
                         <label for="sorting-by">Sort By:</label>
                         <select name="sorting-by">
@@ -99,56 +123,32 @@
                         </select>
                     </div>
                 </div>
-            </section>
+            </div>
+            <!-- Sorter fin -->
 
-            <section class="grid-mice">
-                <!-- Grid generator, todavia no entiendo como se usar. -->
-                <div class="grid-container">
-                    <div class="div1">
-                        <img src="../../media/img/MockUp-final/MockUp-1.png" alt="">
-                        <div class="price-name">
-                            <h3>[Palm-Grip Edition] M4A1 Gaming Mouse</h3>
-                            <h2>$43.99</h2>
-                        </div>
+            <div class="grid-container">
+
+                <div class="m4a1-container">
+                    <div class="m4a1-heading">
+                        <h3 class="m4a1-heading__tittle">
+                            
+                        </h3>
                     </div>
-                    <div class="div2">
-                        <img src="../../media/img/MockUp-final/MockUp-1.png" alt="">
-                        <div class="price-name">
-                            <h3>[Palm-Grip Edition] M4A1 Gaming Mouse</h3>
-                            <h2>$43.99</h2>
-                        </div>
-                    </div>
-                    <div class="div3">
-                        <img src="../../media/img/MockUp-final/MockUp-2.png" alt="">
-                        <div class="price-name">
-                            <h3>[Palm-Grip Edition] M4A1 Gaming Mouse</h3>
-                            <h2>$43.99</h2>
-                        </div>
-                    </div>
-                    <div class="div4">
-                        <img src="../../media/img/MockUp-final/MockUp-2.png" alt="">
-                        <div class="price-name">
-                            <h3>[Palm-Grip Edition] M4A1 Gaming Mouse</h3>
-                            <h2>$43.99</h2>
-                        </div>
-                    </div>
-                    <div class="div5">
-                        <img src="../../media/img/MockUp-final/MockUp-3.png" alt="">
-                        <div class="price-name">
-                            <h3>[Claw-Grip Edition] SCAR-let Gaming Mouse</h3>
-                            <h2>$43.99</h2>
-                        </div>
-                    </div>
-                    <div class="div6">
-                        <img src="../../media/img/MockUp-final/MockUp-3.png" alt="">
-                        <div class="price-name">
-                            <h3>[Claw-Grip Edition] SCAR-let Gaming Mouse</h3>
-                            <h2>$43.99</h2>
-                        </div>
-                    </div>
+
+
+
+
+
+
+
+
+
                 </div>
 
-            </section>
+
+            </div> 
+            <!-- grid-container fin -->
+
         </div>
     </main>
 

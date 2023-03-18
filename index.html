@@ -11,6 +11,7 @@
     <!-- Boostrap 5.0.2 meta tag -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Normalize meta tag -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- estilos.css -->
@@ -28,13 +29,17 @@
 <body>
     <header class="header">
         <div class="header__social">
-            <ion-icon name="logo-facebook" class="fb-icon"></ion-icon>
-            <ion-icon name="logo-twitter" class="tw-icon"></ion-icon>
-            <ion-icon name="logo-instagram" class="ig-icon"></ion-icon>
-            <ion-icon name="logo-amazon" class="amz-icon"></ion-icon>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
         </div>
-        <nav class="navegacion-principal">
-            <div class="logo">
+    </header>
+
+    <!-- Navbar con boostrap -->
+    <nav class="navegacion-principal navbar navbar-expand-md">
+        <div class="container-fluid">
+            <!-- Logo empresa -->
+            <a class="logo navbar-brand" href="./index.html">
                 <div class="logo__image"></div>
                 <div class="logo__brandName">
                     <p>Flows <b>Forward</b></p>
@@ -42,26 +47,30 @@
                 <div class="logo__tagline">
                     <p>Keep tracking</p>
                 </div>
-            </div> <!--Cierre de logo-->
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./html/Products/mice.html">Mice</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./html/Products/mousepad.html">Mousepad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./html/info-about-us/about-us.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./html/info-about-us/contacts.html">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            </a> <!--Cierre de logo-->
+
+            <!-- Navbar -->
+            <div class="justify-content-end navbar navbar-expand-lg" id="navbarToggleExternalContent">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/Products/mice.html">Mice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/Products/mousepad.html">Mousepad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/info-about-us/about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/info-about-us/contacts.html">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Imagen principal de la pagina de bienvenida -->
     <section class="hero">
@@ -69,52 +78,56 @@
     </section>
 
     <!-- Producto estrella -->
-    <main class="tittle-grid-container contenedor">
+    <main class="title-grid-container contenedor">
         <h2>Feactured Product</h2>
         <section class="featured-Product contenedor">
             <div class="fp-grid-container">
 
-                <aside class="left">
-                    <div class="left__image-1">
-                        <img src="./media/img/2external/fp-grid-1.webp" alt="">
-                    </div> <!-- fin image 1-->
-                    <div class="left__image-2">
-                        <img src="./media/img/2external/fp-grid-2.webp" alt="">
-                    </div> <!-- fin imagen 2-->
-                    <div class="left__image-3">
-                        <img src="./media/img/2external/fp-grid-3.webp" alt="">
-                    </div> <!-- fin image 3-->
-                    <div class="left__image-4">
-                        <img src="./media/img/2external/fp-grid-4.webp" alt="">
-                    </div> <!-- fin image 4-->
-                </aside> <!-- fin aside left-->
-
-                <div class="mid">
-                    <div class="mid__img">
+                <!-- Carril de imagenes -->
+                <div class="gallery">
+                    <div class="gallery__big">
                         <picture>
                             <source srcset="media/img/2external/fp-grid-1.avif" alt="Main product's image">
                             <source srcset="media/img/2external/fp-grid-1.webp" alt="Main product's image">
                             <img src="media/img/2external/fp-grid-1.png" alt="Main product's image" srcset="img/png">
                         </picture>
-                        <p>Hover over the image to enlarge it.</p>
+                        <p>
+                            <i class="bi bi-search more-here"></i>
+                            Hover over the image to enlarge it.
+                        </p>
                     </div> <!-- fin mid__img -->
+                    <div class="gallery-bottom">
+                        <div class="bottom__image-1">
+                            <img src="./media/img/expositor/fp-grid-1.webp" alt="">
+                        </div> <!-- fin image 1-->
+                        <div class="bottom__image-2">
+                            <img src="./media/img/expositor/fp-grid-2.webp" alt="">
+                        </div> <!-- fin imagen 2-->
+                        <div class="bottom__image-3">
+                            <img src="./media/img/expositor/fp-grid-3.webp" alt="">
+                        </div> <!-- fin image 3-->
+                        <div class="bottom__image-4">
+                            <img src="./media/img/expositor/fp-grid-4.webp" alt="">
+                        </div> <!-- fin image 4-->
+                    </div> <!-- fin aside left-->
                 </div><!-- fin mid -->
 
                 <div class="right">
                     <div class="contenedor">
                         <header class="header-grid">
-                            <h3 class="header__tittle">
+                            <h3 class="header__title">
                                 The Duel - Gaming Mouse Pad
                             </h3>
                             <p class="header__save-price no-margin no-padding">Save $9</p>
                             <a class="header__vendor-name no-margin no-padding" href="https://www.infinitymice.com/">
                                 Infinity Mice
+                                <i class="bi bi-search more-here"></i>
                             </a>
                         </header>
 
                         <section class="right-info">
                             <div class="right-info--description">
-                                <h4 class="descritpion__tittle">description</h4>
+                                <h4 class="descritpion__title">description</h4>
                                 <p class="descritpion__txt-content">
                                     The Duel, a top-end performance mouse pad meant for all games. A super smooth,
                                     control pad with below-surface edge stitching to prevent abrasion and accidental
@@ -126,7 +139,7 @@
                             </div>
                             <div class="right-info--feactures">
                                 <div class="right-info--feactures">
-                                    <h4 class="feactures__tittle">feactures: </h4>
+                                    <h4 class="feactures__title">feactures: </h4>
                                     <ul class="feactures__list">
                                         <li>
                                             Super smooth surface that focuses on a medium control glide speed with great
@@ -140,35 +153,37 @@
                                 </div>
                             </div>
                             <div class="right-info--size">
-                                <h4 class="size__tittle">Size</h4>
+                                <h4 class="size__title">Size</h4>
                                 <ul class="size__list">
                                     <li>M: 380cm x 380cm x 3.5mm</li>
-                                    <li>L: 430cm x 430cm x 3.5mm</li>
+                                    <li>L: 430cm x 430cm x 3.5mm (out of stock)</li>
                                     <li>XL SQ: 490cm x 490cm x 3.5mm</li>
                                 </ul>
                             </div>
                         </section>
 
                         <footer class="right-to-chart">
-                            <p class="to-chart__tittle">
-                                Size:
-                                <span></span>
-                            </p>
-                            <p class="to-chart__tittle">
-                                Price:
-                                <span></span>
-                            </p>
-                            <p class="to-chart__tittle">
-                                Stock:
-                                <span></span>
-                            </p>
+                            <div class="to-chart__size">
+                                <p class="to-chart__title">Size:</p>
+                                <div class="sizeholder">
+                                    <p>XL SQ: 490cm x 490cm x 3.5mm</p>
+                                </div>
+                                <div class="sizeholder">
+                                    <p>M: 380cm x 380cm x 3.5mm</p>
+                                </div>
+                            </div>
+                            <div class="to-chart__price">
+                                <p class="to-chart__title">Price:</p>
+                                <b class="newPrice">30.99</b>
+                                <span class="old-price">39.99</span>
+                            </div>
 
                         </footer>
                     </div> <!-- contenedor-->
                 </div> <!-- fin right-->
             </div> <!-- fin de grid-container-->
         </section><!-- section Feactured Product -->
-    </main> <!-- tittle-grid-container contenedor -->
+    </main> <!-- title-grid-container contenedor -->
 
 
     <!-- Productos recomendados -->

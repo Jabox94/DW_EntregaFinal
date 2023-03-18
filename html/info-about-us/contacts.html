@@ -11,6 +11,7 @@
     <!-- Boostrap 5.0.2 meta tag -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <!-- Normalize meta tag -->
     <link rel="stylesheet" href="../../css/normalize.css">
     <!-- estilos.css -->
@@ -21,20 +22,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="./media/img/favicon/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <title>FF - Contact us</title>
 </head>
 
 <body class="contact-us-body">
     <header class="header">
         <div class="header__social">
-            <ion-icon name="logo-facebook" class="fb-icon"></ion-icon>
-            <ion-icon name="logo-twitter" class="tw-icon"></ion-icon>
-            <ion-icon name="logo-instagram" class="ig-icon"></ion-icon>
-            <ion-icon name="logo-amazon" class="amz-icon"></ion-icon>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-instagram"></i>
         </div>
-        <nav class="navegacion-principal">
-            <div class="logo">
+    </header>
+    <!-- Nav -->
+    <nav class="navegacion-principal navbar navbar-expand-md">
+        <div class="container-fluid">
+            <!-- Logo empresa -->
+            <a class="logo navbar-brand" href="../../index.html">
                 <div class="logo__image"></div>
                 <div class="logo__brandName">
                     <p>Flows <b>Forward</b></p>
@@ -42,123 +46,32 @@
                 <div class="logo__tagline">
                     <p>Keep tracking</p>
                 </div>
-            </div> <!--Cierre de logo-->
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../Products/mice.html">Mice</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../Products/mousepad.html">Mousepad</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../info-about-us/about-us.html">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="../info-about-us/contacts.html">Contact us</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            </a> <!--Cierre de logo-->
 
-
-    <Main class="contact-us">
-        <div class="whole-container">
-            <div class="main-container">
-                <div class="left-side">
-                    <img src="/media/img/2external/contact-us-img.jpg" alt="A woman who is working" width="976"
-                        height="618">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam cupiditate ab dolor
-                        autem
-                        sunt quae minus odio, earum eum nobis labore eaque est quidem nesciunt nostrum iste neque
-                        laudantium.
-                        Soluta provident reiciendis doloremque sunt at assumenda tenetur explicabo vitae quaerat nulla
-                        nesciunt illo deleniti sapiente ipsum inventore quos voluptatum, eum eveniet quis adipisci
-                        consectetur in saepe est voluptatibus. Accusamus.
-                    </p>
-                </div>
-
-                <div class="right-side">
-                    <h1>Contact with our Sales Team</h1>
-                    <div class="form-container-1">
-                        <div class="label-input-1">
-                            <div class="label-container">
-                                <label for="firts-name">First Name</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="text" important name="first-name" placeholder="E.g. Jonathan">
-                            </div>
-                        </div>
-                        <div class="label-input-2">
-                            <div class="label-container">
-                                <label for="last-name">Last Name</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="text" important name="last-name" placeholder="Torres">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-container-2">
-                        <div class="label-input-1">
-                            <div class="label-container">
-                                <label for="phone-number">Phone Number</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="number" name="phone-number" placeholder="+1 098 908 897">
-                            </div>
-                        </div>
-                        <div class="label-input-2">
-                            <div class="label-container">
-                                <label for="email">Email address</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="email" important name="email" placeholder="name@company.com">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-container-3">
-                        <div class="label-input-1">
-                            <div class="label-container">
-                                <label for="country">Country</label>
-                            </div>
-                            <div class="input-container">
-                                <select name="country" important>
-                                    <option value="uruguay">Uruguay</option>
-                                    <option value="argentina">Argentina</option>
-                                    <option value="chile">Chile</option>
-                                    <option value="others">Others</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="label-input-2">
-                            <div class="label-container">
-                                <label for="how-can">How can we help you with?</label>
-                            </div>
-                            <div class="input-container">
-                                <select name="how-can" important>
-                                    <option value="uruguay">1</option>
-                                    <option value="argentina">2</option>
-                                    <option value="chile">3</option>
-                                    <option value="others">Others</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bottom-side">
-                        <div class="label-container">
-                            <label for="tell-us">What would you like to discuss?</label>
-                        </div>
-                        <div class="input-container">
-                            <textarea name="tell-us" cols="30" rows="10" placeholder="Write here please"></textarea>
-                        </div>
-                    </div>
-                </div>
+            <!-- Navbar -->
+            <div class="justify-content-end navbar navbar-expand-lg" id="navbarToggleExternalContent">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Products/mice.html">Mice</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Products/mousepad.html">Mousepad</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../info-about-us/about-us.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../info-about-us/contacts.html">Contact us</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </Main>
+    </nav>
+
+
 
 
 
