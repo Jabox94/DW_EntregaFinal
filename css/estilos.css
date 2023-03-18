@@ -13,11 +13,10 @@ html {
 }
 
 body {
-    padding: 0;
-    margin: 0;
     /* 1rem == 10px /P.2*/
     font-size: 16px;
     background-color: var(--bg-clr);
+    font-family: var(--fuentePrincipal);
 }
 
 /* Variables */
@@ -28,13 +27,15 @@ body {
     --negro: #000;
 
     /* Custom */
-    --primario: #000080;
+    --primario: #1877F2;
     --secundario: #F5EDCE;
-    --tittle-clr: #50078C;
+
+    --band-clr: #275591;
+    --tittle-clr: #4D46A6;
     --flex: #31ACBD;
 
     /* Font */
-    --fuentePrincipal: 'Kanit', sans-serif;
+    --fuentePrincipal: 'Exo 2', sans-serif;
 }
 
 /* Globales */
@@ -123,46 +124,107 @@ a:visited {
 
 /* Header */
 
-.header-contenedor {
-    width: 100%;
-    padding: 1rem;
+body {
+    background-color: #e1e1e1;
+}
+
+nav .active {
     background-color: var(--primario);
-    /* Decoracion */
+    color: var(--blanco);
+    border-radius: 12px;
 }
 
-.navegacion-principal {
+.header {
+    background-color: white;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header__social {
     display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    justify-content: flex-end;
     align-items: center;
-    height: 5rem;
-    margin: 0 auto;
-    max-width: 140rem;
+    padding: 20px 10px 0 10px;
 }
 
-.logo {
-    width: 12rem;
-    height: 100%;
+.header__social>ion-icon {
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+.fb-icon:hover {
+    color: #1877f2;
+}
+
+.tw-icon:hover {
+    color: #1da1f2;
+}
+
+.ig-icon:hover {
+    color: #405de6;
+}
+
+.amz-icon:hover {
+    color: #ff9900;
+}
+
+.header .navegacion-principal {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+
+    padding-bottom: 1rem;
+    width: 100%;
+    max-width: 120rem;
+}
+
+ul.nav {
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.header .logo {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+}
+
+.logo .logo__brandName {
+    grid-area: 1 / 2 / 2 / 3;
+    border-left: 2px solid #000;
+    padding: 0 2rem;
+}
+
+.logo__brandName p {
+    font-weight: normal;
+    font-size: 2rem;
+    color: var(--band-clr);
+}
+
+.logo .logo__tagline {
+    grid-area: 2 / 2 / 3 / 3;
+    border-left: 2px solid #000;
+    padding: 0 2rem;
+}
+
+.header .logo .logo__image {
+    grid-area: 1 / 1 / 4 / 2;
+
+    background-image: url('../media/img/logo/logo_main.webp');
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
-}
-
-.navegacion-principal__enlaces {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
-}
-
-.navegacion-principal a {
-    font-size: 2.5rem;
-    font-weight: 600;
-    line-height: 1.2;
-}
-
-.navegacion-principal li:hover {
-    border-bottom: 2px solid var(--secundario);
 }
 
 /* Index */
@@ -265,19 +327,19 @@ a:visited {
 }
 
 /*  Grid - Right -> header*/
-.fp-grid-container .right .header {
+.fp-grid-container .right .header-grid {
     display: flex;
     flex-direction: column;
     border-bottom: 1px solid var(--flex);
 }
 
-.fp-grid-container .right .header .header__tittle {
+.fp-grid-container .right .header-grid .header__tittle {
     margin-top: 1.5rem;
     font-size: 2.2rem;
     color: var(--tittle-clr);
 }
 
-.fp-grid-container .right .header .header__save-price {
+.fp-grid-container .right .header-grid .header__save-price {
     color: var(--secundario);
     background-color: var(--primario);
     font-size: 1.2rem;
@@ -403,6 +465,7 @@ section>ul>li {
 
 section>ul>li:hover {
     list-style: georgian;
+    color: var(--blanco);
 }
 
 section>h4 {
@@ -458,7 +521,7 @@ section.footer-subscribe p {
 }
 
 section.footer-subscribe .btn-newsletter:hover {
-    color: var(--negro);
+    color: var(--band-clr);
     background-color: var(--bg-clr);
     opacity: 1;
 }
@@ -1052,12 +1115,6 @@ section.clip-2 {
 
     .logo {
         background-image: none;
-    }
-
-    .navegacion-principal__enlaces {
-        display: block;
-        width: 60%;
-        margin: 0 auto;
     }
 
     .footer {

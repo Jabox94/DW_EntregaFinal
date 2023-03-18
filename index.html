@@ -2,45 +2,65 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tag -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Proyecto para curso de webdesign de CoderHouse">
     <meta name="author" content="Javier Miranda - Jabox">
+    <!-- Boostrap 5.0.2 meta tag -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Normalize meta tag -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- estilos.css -->
     <link rel="stylesheet" href="./css/estilos.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="./media/img/favicon/favicon.ico">
-    <title>ZypherGear - Welcome</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title> Flows Forward - Welcome</title>
 </head>
 
 <body>
-    <header class=".header">
-        <div class="header-contenedor">
-            <nav class="navegacion-principal contenedor">
-                <div class="logo"></div>
-                <ul class="navegacion-principal__enlaces">
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./html/Products/mice.html">Mice</a>
-                    </li>
-                    <li>
-                        <a href="./html/Products/mousepad.html">Mousepads</a>
-                    </li>
-                    <li>
-                        <a href="./html/info-about-us/contacts.html">Contact</a>
-                    </li>
-                    <li>
-                        <a href="./html/info-about-us/about-us.html">Who are we?</a>
-                    </li>
-                </ul>
-            </nav>
+    <header class="header">
+        <div class="header__social">
+            <ion-icon name="logo-facebook" class="fb-icon"></ion-icon>
+            <ion-icon name="logo-twitter" class="tw-icon"></ion-icon>
+            <ion-icon name="logo-instagram" class="ig-icon"></ion-icon>
+            <ion-icon name="logo-amazon" class="amz-icon"></ion-icon>
         </div>
+        <nav class="navegacion-principal">
+            <div class="logo">
+                <div class="logo__image"></div>
+                <div class="logo__brandName">
+                    <p>Flows <b>Forward</b></p>
+                </div>
+                <div class="logo__tagline">
+                    <p>Keep tracking</p>
+                </div>
+            </div> <!--Cierre de logo-->
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/Products/mice.html">Mice</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/Products/mousepad.html">Mousepad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/info-about-us/about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./html/info-about-us/contacts.html">Contact us</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Imagen principal de la pagina de bienvenida -->
@@ -82,7 +102,7 @@
 
                 <div class="right">
                     <div class="contenedor">
-                        <header class="header">
+                        <header class="header-grid">
                             <h3 class="header__tittle">
                                 The Duel - Gaming Mouse Pad
                             </h3>
@@ -212,6 +232,12 @@
         </div>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
