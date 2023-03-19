@@ -116,7 +116,7 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--blanco);
+    color:  var(--blanco);
 }
 
 a:hover {
@@ -160,7 +160,10 @@ nav .active {
     max-width: 140rem;
 }
 
-.header__social>i {
+.header__social>a>i {
+    color: var(--band-clr);
+}
+.header__social>a>i {
     display: flex;
     justify-content: space-between;
     font-size: 22px;
@@ -214,6 +217,12 @@ ul.navbar-nav {
     grid-area: 2 / 2 / 3 / 3;
     border-left: 2px solid #000;
     text-align: center;
+}
+.logo__tagline p{
+    font-size: 1.6rem;
+    font-size: 600;
+    font-style: oblique;
+    line-height: 1.4;
 }
 
 .navegacion-principal .logo .logo__image {
@@ -560,7 +569,6 @@ section.footer-subscribe .btn-newsletter:hover {
 
 main.main-content-news {
     width: 100%;
-    background-image: url(/media/img/1ZephyrGear/brand-logo-bg.png);
     padding: 100px 0;
 }
 
