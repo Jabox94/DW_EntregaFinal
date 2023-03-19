@@ -23,6 +23,7 @@
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../media/img/favicon/favicon.ico">
     <title> FF - Mice</title>
 </head>
 
@@ -49,7 +50,7 @@
             </a> <!--Cierre de logo-->
 
             <!-- Navbar -->
-            <div class="justify-content-fin navbar navbar-expand-lg" id="navbarToggleExternalContent">
+            <div class="justify-content-end navbar navbar-expand-lg" id="navbarToggleExternalContent">
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="../../index.html">Home</a>
@@ -79,77 +80,215 @@
     <main class="main-content-mice">
         <div class="mice-content contenedor">
 
-            <div class="mice-content__filter">
-                <h2 class="filter__heading">Filters</h2>
-                <div class="filter-container">
-                    <div class="label-input-1">
-                        <input type="checkbox" name="pns">
-                        <label for="pns">PnS</label>
-                    </div>
-                    <div class="label-input-2">
-                        <input type="checkbox" name="m4a1">
-                        <label for="m4a1">M4A1</label>
-                    </div>
-                    <div class="label-input-3">
-                        <input type="checkbox" name="scarlet">
-                        <label for="scarlet">SCAR-let</label>
-                    </div>
+            <div class="mice-content-heading">
+                <h1 class="sorter__title no-margin no-padding">Mice</h1>
+
+                <p>Showing 1 - 6 of 24 products</p>
+                <div class="label-input">
+                    <label for="howMany">Display: </label>
+                    <select name="howMany">
+                        <option value="6">6 per page</option>
+                        <option value="12">12 per page</option>
+                        <option value="18">18 per page</option>
+                        <option value="24">24 per page</option>
+                    </select>
                 </div>
+                <!-- label-input 1 -->
+
+                <div class="label-input">
+                    <label for="sorting-by">Sort By:</label>
+                    <select name="sorting-by">
+                        <option value="higher-lower">Higher to lower</option>
+                        <option value="lower-higher">Lower to higher</option>
+                        <option value="relevant">Most relevant</option>
+                    </select>
+                </div>
+                <!-- label-input 2-->
             </div>
-            <!-- Filter fin -->
+            <!-- mice-content-heading -->
 
-            <div class="grid-heading">
-                <div class="sorter__heading">
-                    <h1 class="sorter__title no-margin no-padding">Mice</h1>
+            <div class="grid-content-container">
 
-                    <p>Showing 1 - 6 of 6 products</p>
-                    <div class="sorter__label-input">
-                        <label for="howMany">Display: </label>
-                        <select name="howMany">
-                            <option value="6">6 per page</option>
-                            <option value="12">12 per page</option>
-                            <option value="24">24 per page</option>
-                        </select>
+                <div class="grid-m4a1-content">
+
+                    <div class="m4a1-header">
+                        <h4 class="m4a1-heading__tittle">
+                            M4A1 Family
+                        </h4>
+                        <a href="#" class="seemore">
+                            see more here <b>-></b>
+                        </a>
+                    </div>
+                    <!-- m4a1-header -->
+
+                    <div class="m4a1-card-1 card">
+                        <img src="../../media/img/mice-grid/M4A1/mini/m4a1-1.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">M4A1 Ergo</h4>
+                                <p class="card__description">
+                                    Focused On Palm-Grip,
+                                    Ergonomic,
+                                    Wireled
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- m4a1-card 1 -->
+
+                    <div class="m4a1-card-2 card">
+                        <img src="../../media/img/mice-grid/M4A1/mini/m4a1-2.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">M4A1 FTG</h4>
+                                <p class="card__description">
+                                    Focused On Fingertip-Grip,
+                                    Ergonomic,
+                                    Wireled
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- m4a1-card 2 -->
+
+                    <div class="m4a1-card-3 card">
+                        <img src="../../media/img/mice-grid/M4A1/mini/m4a1-3.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">M4A1 Mini Wireless</h4>
+                                <p class="card__description">
+                                    Focused On Claw-Grip,
+                                    Ergonomic,
+                                    Wireless
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- m4a1-card 3 -->
+                </div>
+                <!-- grid-m4a1-content -->
+
+                <div class="grid-pns-content">
+
+                    <div class="pns-header">
+                        <h4 class="pns-heading__tittle">
+                            PnS Family
+                        </h4>
+                        <a href="#" class="seemore">
+                            see more here <b>-></b>
+                        </a>
+                    </div>
+
+                    <div class="pns-card-1 card">
+                        <img src="../../media/img/mice-grid/PnS/mini/pns-1.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">
+                                    PnS
+                                    HyperPolling+
+                                </h4>
+                                <p class="card__description">
+                                    Ultra-lightweight,
+                                    Ergonomic,
+                                    Esports Mouse,
+                                    HyperPolling 8K
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pns-card-2 card">
+                        <img src="../../media/img/mice-grid/PnS/mini/pns-2.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">
+                                    PnS
+                                    HyperPolling
+                                </h4>
+                                <p class="card__description">
+                                    Ultra-lightweight,
+                                    Ergonomic,
+                                    Esports Mouse,
+                                    HyperPolling 4K
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="pns-card-3 card">
+                        <img src="../../media/img/mice-grid/PnS/mini/pns-3.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">M4A1 Mini Wireless</h4>
+                                <p class="card__description">
+                                    Ultra-lightweight,
+                                    Ergonomic,
+                                    Esports Mouse,
+                                    Mini Size
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <!-- grid-pns-content -->
+                <div class="grid-scarlet-content">
 
-                <div class="sort__selector">
-                    <div class="label-input">
-                        <label for="sorting-by">Sort By:</label>
-                        <select name="sorting-by">
-                            <option value="higher-lower">Higher to lower</option>
-                            <option value="lower-higher">Lower to higher</option>
-                            <option value="relevant">Most relevant</option>
-                        </select>
+                    <div class="scarlet-header">
+                        <h4 class="scarlet-heading__tittle">
+                            Scar-<span>let</span> Family
+                        </h4>
+                        <a href="#" class="seemore">
+                            see more here <b>-></b>
+                        </a>
+                    </div>
+
+                    <div class="scarlet-card-1 card">
+                        <img src="../../media/img/mice-grid/Scarlet/mini/scarlet-1.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">Scar-let Ergo 4k</h4>
+                                <p class="card__description">
+                                    Focused on E-sports,
+                                    Ergonomic,
+                                    Wireless 4k Polling Rate
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="scarlet-card-2 card">
+                        <img src="../../media/img/mice-grid/Scarlet/mini/scarlet-2.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">Scar-let 8k</h4>
+                                <p class="card__description">
+                                    Focused on E-sports,
+                                    Ergonomic,
+                                    Wireless 8K Polling Rate
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="scarlet-card-3 card">
+                        <img src="../../media/img/mice-grid/Scarlet/mini/scarlet-3.webp" alt="">
+                        <div class="card__txt-content">
+                            <a href="#">
+                                <h4 class="card__title">Scar-let Mini 8k</h4>
+                                <p class="card__description">
+                                    Focused on E-sports,
+                                    Ergonomic,
+                                    Wireless 8K Polling Rate
+                                </p>
+                            </a>
+                        </div>
                     </div>
                 </div>
+                <!-- grid-scarlet-content -->
             </div>
-            <!-- Sorter fin -->
-
-            <div class="grid-container">
-
-                <div class="m4a1-container">
-                    <div class="m4a1-heading">
-                        <h3 class="m4a1-heading__tittle">
-                            
-                        </h3>
-                    </div>
-
-
-
-
-
-
-
-
-
-                </div>
-
-
-            </div> 
-            <!-- grid-container fin -->
-
+            <!-- Grid container fin -->
         </div>
+        <!-- Mice content contenedor -->
     </main>
 
     <footer class="footer">
