@@ -70,7 +70,9 @@ body {
     opacity: 0.8;
 }
 
-html {}
+html {
+    font-family: var(--fuentePrincipal);
+}
 
 img {
     width: 100%;
@@ -179,15 +181,11 @@ nav .active {
 
 .navegacion-principal .container-fluid {
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     width: 100%;
     max-width: 120rem;
 }
 
-ul.nav {
+ul.navbar-nav {
     width: 100%;
     padding: 0;
     margin: 0;
@@ -905,6 +903,12 @@ section.clip-2 {
     .grid-content-container .grid-scarlet-content {
         display: flex;
         flex-direction: column;
+    }
+
+    ul.navbar-nav {
+        text-align: center;
+        margin: auto;
+        width: 80%;
     }
 
     /*Grid -> index  */
