@@ -27,45 +27,49 @@ body {
 }
 
 /* Black mode - NightMode */
-body.black-mode-on {
+body.darkMode {
     background: rgb(37, 37, 37);
     background: linear-gradient(0deg, rgba(37, 37, 37, 1) 0%, rgba(0, 0, 0, 1) 100%);
 }
 
-body.black-mode-on header {
+body.darkMode header {
     background-color: #000;
 }
 
-body.black-mode-on header .header__social a i {
+body.darkMode header .header__social a i {
     color: #F5EDCE;
     opacity: 0.8;
 }
 
-body.black-mode-on header .header__social a i.bi-facebook:hover {
+body.darkMode header .header__social a i.bi-facebook:hover {
     color: #1877f2;
 }
 
-body.black-mode-on header .header__social a i.bi-twitter:hover {
+body.darkMode header .header__social a i.bi-twitter:hover {
     color: #1da1f2;
 }
 
-body.black-mode-on header .header__social a i.bi-instagram:hover {
+body.darkMode header .header__social a i.bi-instagram:hover {
     color: violet;
 }
 
-body.black-mode-on nav .logo {
+body.darkMode nav {
+    border-bottom: 1px solid var(--secundario);
+}
+
+body.darkMode nav .logo {
     filter: invert(1);
 }
 
-body.black-mode-on footer {
+body.darkMode footer {
     background: transparent;
 }
 
-body.black-mode-on>h1,
-body.black-mode-on>h2,
-body.black-mode-on>h3,
-body.black-mode-on>h4,
-body.black-mode-on>p {
+body.darkMode>h1,
+body.darkMode>h2,
+body.darkMode>h3,
+body.darkMode>h4,
+body.darkMode>p {
     color: var(--secundario);
 }
 
@@ -412,19 +416,19 @@ ul.navbar-nav {
     width: 95%;
 }
 
-.right-info--feactures .feactures__title {
+.right-info--features .features__title {
     font-size: 1.6rem;
     text-transform: uppercase;
     margin: 1rem 0;
 }
 
-.right-info--feactures .feactures__list {
+.right-info--features .features__list {
     list-style: disc;
     padding: 0 2rem;
     width: 90%;
 }
 
-.right-info--feactures .feactures__list>li {
+.right-info--features .features__list>li {
     line-height: 2.3;
     font-size: 1.5rem;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -672,6 +676,7 @@ main.main-content-mice {
     flex-direction: column;
     margin: 0 auto;
     width: auto;
+    gap: 5rem;
 }
 
 .mice-content-heading {
@@ -682,7 +687,6 @@ main.main-content-mice {
     justify-content: space-between;
     width: 100%;
     border-bottom: 2px solid var(--band-clr);
-    gap: 2rem;
     padding: 0 5rem;
 }
 
@@ -867,7 +871,7 @@ div.mice__label-input>select {
 /* Fin de mice.html */
 
 
-/* Estilos ->  Mice */
+/* Estilos ->  Mousepad */
 
 section.mousepad-hero {
     width: auto;
@@ -885,7 +889,6 @@ article.mousepad-hero__imagen {
 }
 
 .mousepad-content {
-    padding: 2rem;
     width: auto;
     height: 100%;
     display: flex;
@@ -895,13 +898,15 @@ article.mousepad-hero__imagen {
 main.main-content-mousepad {
     width: 90%;
     margin: 0 auto;
+    padding: 2rem 0 10rem 0;
 }
 
-.mousepad-content {
+.mousepad-content-container {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     width: auto;
+    gap: 2rem;
 }
 
 .mousepad-content-heading {
@@ -912,12 +917,10 @@ main.main-content-mousepad {
     justify-content: space-between;
     width: 100%;
     border-bottom: 2px solid var(--band-clr);
-    gap: 2rem;
     padding: 0 5rem;
 }
 
-div.mousepad__label-input,
-.sorter__heading p {
+div.mousepad__label-input {
     width: fit-content;
     align-items: center;
     margin: 1rem 2rem;
@@ -939,39 +942,36 @@ div.mousepad__label-input>select {
 
 /* Grid para mousepad.html */
 
-.grid-content-container {
+.mousepad-content-container {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.grid-content-container>div {
+.mousepad-content-container>div {
     padding: 2rem 1rem;
 }
 
-.grid-content-container>div>.card {
+.mousepad-content-container>div>.card {
     height: fit-content;
-    width: 70%;
+    width: 100%;
     text-align: center;
     margin: 2rem auto;
-    background-color: transparent;
-    border: 0;
+    background-color: var(--blanco);
 }
 
-.grid-content-container>div>.card:hover {
-    border: 1px solid var(--band-clr);
-    border-radius: 10px;
+.mousepad-content-container>div>.card:hover {
     cursor: pointer;
 }
 
-.card__txt-content {
-    background-color: transparent;
+.mousepad-card__txt-content {
+    background-color: var(--blanco);
     padding: 2rem;
+    text-align: start;
 }
 
-.grid-content-container>div>.card>img {
-    width: 50%;
-    margin: 1rem auto;
+.mousepad-content-container>div>.card>img {
+    width: 100%;
 }
 
 .seemore {
@@ -1104,12 +1104,8 @@ div.mousepad__label-input>select {
 
 /* Estilos -> Contact us */
 
-body.black-mode-on nav {
-    border-bottom: 1px solid var(--secundario);
-}
-
 main.contact-us {
-    padding: 3rem 0;
+    padding: 8rem 0;
 }
 
 .form_container {

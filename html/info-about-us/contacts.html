@@ -27,7 +27,7 @@
     <title>FF - Contact us</title>
 </head>
 
-<body class="black-mode-on">
+<body class="darkMode">
     <header class="header">
         <div class="header__social">
             <a href="https://es-la.facebook.com/" target="_blank">
@@ -87,24 +87,23 @@
             <section class="form_contact">
                 <div class="row">
                     <div class="col">
-                        <label for="exampleFormControlInput1" class="form-label text-white">First Name</label>
-                        <input type="text" class="form-control" aria-label="First name">
+                        <label for="firstName" class="form-label text-white">First Name</label>
+                        <input type="text" class="form-control" aria-label="First name" id="firstName">
                     </div>
                     <div class="col">
-                        <label for="exampleFormControlInput1" class="form-label text-white">Last Name</label>
-                        <input type="text" class="form-control" aria-label="Last name">
+                        <label for="lastName" class="form-label text-white">Last Name</label>
+                        <input type="text" class="form-control" aria-label="Last name" id="lastName">
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
-                    <input type="email" class="form-control form-email" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+                    <label for="emailInput" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control form-email" id="emailInput" placeholder="name@example.com">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormSelectInput1" class="form-label text-white">
+                    <label for="selectDiscussed" class="form-label text-white">
                         Select the type to be discussed
                     </label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select class="form-select" aria-label="Default select example" id="selectDiscussed">
                         <option selected>Open this select menu</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -115,15 +114,10 @@
                     <label for="exampleFormControlTextarea1" class="form-label text-white">Your message</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                    <button class="btn-indeed">Finish</button>
+                <button class="btn-indeed">Finish</button>
             </section>
         </div>
     </main>
-
-
-
-
-
 
     <footer class="footer">
         <div class="footer-container contenedor">
