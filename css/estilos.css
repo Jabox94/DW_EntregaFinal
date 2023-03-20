@@ -593,7 +593,7 @@ main.main-content-news {
 
 /* Fin de news */
 
-/* Estilos ->  Mice */
+/* Estilos -> Mice */
 
 section.mice-hero {
     width: auto;
@@ -643,7 +643,7 @@ main.main-content-mice {
     padding: 0 5rem;
 }
 
-div.label-input,
+div.mice__label-input,
 .sorter__heading p {
     width: fit-content;
     align-items: center;
@@ -652,12 +652,12 @@ div.label-input,
     color: white;
 }
 
-div.label-input>label {
+div.mice__label-input>label {
     font-size: 1.6rem;
     text-align: center;
 }
 
-div.label-input>select {
+div.mice__label-input>select {
     width: 15rem;
     height: 5rem;
     font-weight: bolder;
@@ -821,8 +821,239 @@ div.label-input>select {
     width: 70%;
 }
 
+/* Fin de mice.html */
+
+
+/* Estilos ->  Mice */
+
+section.mousepad-hero {
+    width: auto;
+    height: fit-content;
+}
+
+article.mousepad-hero__imagen {
+    width: 100%;
+    min-height: 80rem;
+    background-image: url('/media/img/mousepad/mousepad-hero.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.mousepad-content {
+    padding: 2rem;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main.main-content-mousepad {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mousepad-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: auto;
+}
+
+.mousepad-content-heading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid var(--band-clr);
+    gap: 2rem;
+    padding: 0 5rem;
+}
+
+div.mousepad__label-input,
+.sorter__heading p {
+    width: fit-content;
+    align-items: center;
+    margin: 1rem 2rem;
+    filter: invert(1);
+    color: white;
+}
+
+div.mousepad__label-input>label {
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+div.mousepad__label-input>select {
+    width: 15rem;
+    height: 5rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+/* Grid para mousepad.html */
+
+.grid-content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.grid-content-container>div {
+    padding: 2rem 1rem;
+}
+
+.grid-content-container>div>.card {
+    height: fit-content;
+    width: 70%;
+    text-align: center;
+    margin: 2rem auto;
+    background-color: transparent;
+    border: 0;
+}
+
+.grid-content-container>div>.card:hover {
+    border: 1px solid var(--band-clr);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card__txt-content {
+    background-color: transparent;
+    padding: 2rem;
+}
+
+.grid-content-container>div>.card>img {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.seemore {
+    color: var(--title-clr);
+}
+
+.seemore:hover {
+    color: var(--primario);
+}
+
+/* Mousepad -> Grid -> gamesense */
+.grid__gamesense-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.gamesense-header {
+    grid-area: 1/1/1/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 5rem;
+    border-bottom: 1px solid var(--band-clr);
+    width: 100%;
+}
+
+.gamesense-card-1 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+}
+
+.gamesense-card-2 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 100%;
+}
+
+.gamesense-card-3 {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 100%;
+}
+
+/* Mousepad -> Grid -> control */
+.grid__control-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.control-header {
+    grid-area: 1/1/1/4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 5rem;
+    border-bottom: 1px solid var(--band-clr);
+    width: 100%;
+}
+
+.control-card-1 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+}
+
+.control-card-2 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 100%;
+}
+
+.control-card-3 {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 100%;
+}
+
+/* Mousepad -> Grid -> glass */
+.grid__glass-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    align-items: center;
+    width: 100%;
+}
+
+.glass-header {
+    grid-area: 1/1/1/4;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1rem 5rem;
+    border-bottom: 1px solid var(--band-clr);
+    width: 100%;
+}
+
+.glass-card-1 {
+    grid-area: 2 / 1 / 3 / 2;
+    width: 100%;
+}
+
+.glass-card-2 {
+    grid-area: 2 / 2 / 3 / 3;
+    width: 100%;
+}
+
+.glass-card-3 {
+    grid-area: 2 / 3 / 3 / 4;
+    width: 100%;
+}
+
+.grid-content-container>div>.glass-card-3>img {
+    width: 70%;
+}
+
 
 /* Fin de mice.html */
+
+
 
 
 /* Estilos -> Contact us */
@@ -927,28 +1158,23 @@ body.about-us footer {
 @media (max-width: 768px) {
 
     /* Grid responsive -> Mice.html */
-    .mice-content-heading {
+    .mice-content-heading,
+    .mousepad-content-heading {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
     }
 
-    .mice-content-heading .label-input label,
-    .mice-content-heading .label-input select {
+    .mice-content-heading .mice__label-input label,
+    .mice-content-heading .mice__label-input select,
+    .mousepad-content-heading .mousepad__label-input label,
+    .mousepad-content-heading .mousepad__label-input select {
         width: 100%;
     }
 }
 
 @media (max-width: 1000px) {
-
-    .grid-content-container .grid-m4a1-content,
-    .grid-content-container .grid-pns-content,
-    .grid-content-container .grid-scarlet-content {
-        display: flex;
-        flex-direction: column;
-    }
-
     ul.navbar-nav {
         text-align: center;
         margin: auto;
@@ -1059,4 +1285,18 @@ body.about-us footer {
     .about__grid-container .about-grid__txt {
         text-align: center;
     }
+
+    /* Mice MQ  y  Mousepad MQ */
+    .grid-content-container .grid-m4a1-content,
+    .grid-content-container .grid-pns-content,
+    .grid-content-container .grid-scarlet-content,
+    .grid-content-container .grid__gamesense-content,
+    .grid-content-container .grid__control-content,
+    .grid-content-container .grid__glass-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
 }
