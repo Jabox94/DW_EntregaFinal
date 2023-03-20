@@ -989,6 +989,7 @@ div.mousepad__label-input>select {
     grid-auto-rows: auto;
     align-items: center;
     width: 100%;
+    gap: 1rem;
 }
 
 .gamesense-header {
@@ -1024,6 +1025,7 @@ div.mousepad__label-input>select {
     grid-auto-rows: auto;
     align-items: center;
     width: 100%;
+    gap: 1rem;
 }
 
 .control-header {
@@ -1059,6 +1061,7 @@ div.mousepad__label-input>select {
     grid-auto-rows: auto;
     align-items: center;
     width: 100%;
+    gap: 1rem;
 }
 
 .glass-header {
@@ -1249,7 +1252,8 @@ main.contact-us {
     .mousepad-content-heading .mousepad__label-input select {
         width: 100%;
     }
-    .form_container .btn-indeed{
+
+    .form_container .btn-indeed {
         background-color: var(--band-clr);
     }
 }
