@@ -151,13 +151,12 @@ nav .active {
 }
 
 .header__social {
-    width: 100%;
+    width: 85%;
     height: fit-content;
     padding: 1rem 1rem;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-width: 140rem;
 }
 
 .header__social>a>i {
