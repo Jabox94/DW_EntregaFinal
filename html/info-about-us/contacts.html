@@ -27,7 +27,7 @@
     <title>FF - Contact us</title>
 </head>
 
-<body class="contact-us-body">
+<body class="black-mode-on">
     <header class="header">
         <div class="header__social">
             <a href="https://es-la.facebook.com/" target="_blank">
@@ -42,7 +42,7 @@
         </div>
     </header>
     <!-- Nav -->
-    <nav class="navegacion-principal navbar navbar-expand-lg navbar-light bg-transparent">
+    <nav class="navegacion-principal navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-fluid">
             <a class="logo navbar-brand" href="../../index.html">
                 <div class="logo__image"></div>
@@ -58,26 +58,68 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav justify-content-end align-text-center">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav justify-content-end align-text-center navbar-dark">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" aria-current="page" href="../../index.html">Home</a>
+                        <a class="nav-link text-white" aria-current="page" href="../../index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="../Products/mice.html">Mice</a>
+                        <a class="nav-link text-white" href="../Products/mice.html">Mice</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="../Products/mousepad.html">Mousepad</a>
+                        <a class="nav-link text-white" href="../Products/mousepad.html">Mousepad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="../info-about-us/about-us.html">About us</a>
+                        <a class="nav-link text-white" href="../info-about-us/about-us.html">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-dark active" href="../info-about-us/contacts.html">Contact us</a>
+                        <a class="nav-link text-white active" href="../info-about-us/contacts.html">Contact us</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <main class="contact-us">
+        <section class="heading-contact-us">
+            <h1>Contact Us</h1>
+        </section>
+        <div class="form_container">
+            <section class="form_contact">
+                <div class="row">
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label text-white">First Name</label>
+                        <input type="text" class="form-control" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="exampleFormControlInput1" class="form-label text-white">Last Name</label>
+                        <input type="text" class="form-control" aria-label="Last name">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label text-white">Email address</label>
+                    <input type="email" class="form-control form-email" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormSelectInput1" class="form-label text-white">
+                        Select the type to be discussed
+                    </label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label text-white">Your message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                    <button class="btn-indeed">Finish</button>
+            </section>
+        </div>
+    </main>
+
 
 
 
