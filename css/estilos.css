@@ -302,7 +302,7 @@ ul.navbar-nav {
     max-height: 80rem;
 }
 
-.title-grid-container h2 {
+.title-grid-container h1 {
     font-size: 2.8rem;
     font-weight: bold;
     color: var(--title-clr);
@@ -526,7 +526,7 @@ ul.navbar-nav {
     gap: 2rem;
 }
 
-section>ul>li {
+.footer-container div>ul>li {
     font-size: 1.8rem;
     font-weight: 700;
     line-height: 2;
@@ -535,12 +535,12 @@ section>ul>li {
     height: max-content;
 }
 
-section>ul>li:hover {
+.footer-container div>ul>li:hover {
     list-style: georgian;
     color: var(--blanco);
 }
 
-section>h4 {
+.footer-container div>h4 {
     color: var(--secundario);
     width: max-content;
     height: max-content;
@@ -551,18 +551,18 @@ section>h4 {
     text-align: center;
 }
 
-section>ul {
+.footer-container div>ul {
     padding: 0;
     text-align: left;
 }
 
 
-section.footer-subscribe {
+div.footer-subscribe {
     padding: 0;
     margin: 0;
 }
 
-section.footer-subscribe input[type="email"] {
+div.footer-subscribe form input[type="email"] {
 
     width: auto;
     max-width: 90%;
@@ -575,7 +575,7 @@ section.footer-subscribe input[type="email"] {
     font-size: 2rem;
 }
 
-section.footer-subscribe div.sub-cbx {
+div.footer-subscribe form div.sub-cbx {
     width: auto;
     display: flex;
     justify-content: flex-start;
@@ -583,12 +583,12 @@ section.footer-subscribe div.sub-cbx {
     padding: 1rem 0.5rem;
 }
 
-section.footer-subscribe input[type="checkbox"] {
+div.footer-subscribe form input[type="checkbox"] {
     background-color: blue;
     transform: scale(1.3);
 }
 
-section.footer-subscribe p {
+div.footer-subscribe form p {
     color: var(--secundario);
     font-size: 1.8rem;
     line-height: 1.2;
@@ -596,7 +596,7 @@ section.footer-subscribe p {
     margin-left: 1rem;
 }
 
-section.footer-subscribe .btn-newsletter:hover {
+div.footer-subscribe form .btn-newsletter:hover {
     color: var(--band-clr);
     background-color: var(--bg-clr);
     opacity: 1;
@@ -1308,20 +1308,20 @@ main.contact-us {
         margin: auto;
     }
 
-    .footer-container section {
+    .footer-container div {
         padding: 2rem 0;
     }
 
-    section>h4 {
+    .footer-container div>h4 {
         width: auto;
         height: auto;
     }
 
-    section>ul {
+    .footer-container div>ul {
         text-align: center;
     }
 
-    section>ul>li {
+    .footer-container div>ul>li {
         font-size: 3rem;
         font-weight: 700;
         line-height: 3;
@@ -1331,24 +1331,24 @@ main.contact-us {
         word-wrap: break-word;
     }
 
-    section.footer-subscribe h4 {
+    .footer-subscribe h4 {
         width: 100%;
     }
 
-    section.footer-subscribe {
+    .footer-subscribe form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    section.footer-subscribe input[type="email"] {
-
+    .footer-subscribe form input[type="email"] {
+        min-width: 90%;
         max-width: 90%;
         margin: 0 auto;
     }
 
-    section.footer-subscribe .btn-newsletter {
+    .footer-subscribe form .btn-newsletter {
         width: 100%;
     }
 
@@ -1376,7 +1376,4 @@ main.contact-us {
         display: flex;
         flex-direction: column;
     }
-
-
-
 }
