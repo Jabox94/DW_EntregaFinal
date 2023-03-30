@@ -1,0 +1,10 @@
+Segunda entrega de proyecto para CoderHouse - José Javier Miranda González
+
+Proyecto basado en paginas como:
+
+	https://xtrfy.com/
+	https://lamzu.com/
+	https://www.razer.com/
+	
+Proyecto hosteado en netlify:
+	https://flowsforward.netlify.app/
