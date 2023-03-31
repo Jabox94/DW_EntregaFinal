@@ -9,14 +9,13 @@ nav .active {
 }
 
 .navegacion-principal {
-    max-width: 90%;
-    margin: auto;
-    max-height: min-content;
+    min-width: 100%;
+    min-height: fit-content;
 
     .container-fluid {
         margin: auto;
         width: 100%;
-        max-width: 110rem;
+        max-width: 140rem;
     }
 
     .logo {
