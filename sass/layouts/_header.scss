@@ -1,0 +1,48 @@
+$color_1: var(--secundario);
+$color_2: #1877f2;
+$color_3: #1da1f2;
+$color_4: violet;
+$background-color_1: var(--footer-clr);
+
+.header {
+    background-color: $background-color_1;
+    width: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.header__social {
+    max-width: 85%;
+    height: fit-content;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    >a {
+        >i {
+            color: $color_1;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.8rem;
+            margin: 0 1rem;
+        }
+    }
+}
+
+.bi-facebook {
+    &:hover {
+        color: $color_2;
+    }
+}
+
+.bi-twitter {
+    &:hover {
+        color: $color_3;
+    }
+}
+
+.bi-instagram {
+    &:hover {
+        color: $color_4;
+    }
+}

@@ -1,0 +1,169 @@
+$color_1: var(--secundario);
+$color_2: var(--blanco);
+$color_3: var(--band-clr);
+$background-color_1: var(--footer-clr);
+$background-color_2: var(--bg-clr);
+$background-color_3: blue;
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 27rem;
+    padding: 3rem 0;
+    color: $color_1;
+    background-color: $background-color_1;
+    background-repeat: repeat;
+    background-position: center center;
+
+    @include tablet {
+        width: auto;
+        height: fit-content;
+        background-image: url(../media/img/1ZephyrGear/brand-logo-bg.png);
+        background-repeat: repeat-y;
+        background-size: contain;
+        height: auto;
+    }
+}
+
+.footer-container {
+    padding: 0 2rem;
+    max-width: 1400px;
+    width: auto;
+    height: fit-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    @include tablet {
+        padding: 0 2rem;
+        width: auto;
+        height: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        display: block;
+        height: auto;
+        margin: auto;
+    }
+
+    div {
+        @include tablet {
+            padding: 2rem 0;
+        }
+
+        >ul {
+            @include tablet {
+                text-align: center;
+            }
+
+            >li {
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 2;
+                text-align: left;
+                width: max-content;
+                height: max-content;
+
+                @include tablet {
+                    font-size: 3rem;
+                    font-weight: 700;
+                    line-height: 3;
+                    text-align: center;
+                    width: auto;
+                    height: auto;
+                    word-wrap: break-word;
+                }
+
+                &:hover {
+                    list-style: georgian;
+                    color: $color_2;
+                }
+            }
+
+            padding: 0;
+            text-align: left;
+        }
+
+        >h4 {
+            color: $color_1;
+            width: max-content;
+            height: max-content;
+            font-size: 2.8rem;
+            font-weight: 400;
+            margin: 1rem 0;
+            border-bottom: solid 2px var(--bg-clr);
+            text-align: center;
+
+            @include tablet {
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}
+
+.footer-subscribe {
+    padding: 0;
+    margin: 0;
+
+    form {
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="email"] {
+            width: auto;
+            max-width: 90%;
+            padding: 1.5rem;
+            margin-bottom: 8px;
+            color: $color_1;
+            background-color: $background-color_2;
+            border-radius: 1rem;
+            border: 0;
+            font-size: 2rem;
+
+            @include tablet {
+                min-width: 90%;
+                max-width: 90%;
+                margin: 0 auto;
+            }
+        }
+
+        .sub-cbx {
+            width: auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 1rem 0.5rem;
+        }
+
+        input[type="checkbox"] {
+            background-color: $background-color_3;
+            transform: scale(1.3);
+        }
+
+        p {
+            color: $color_1;
+            font-size: 1.8rem;
+            line-height: 1.2;
+            margin: 0;
+            margin-left: 1rem;
+        }
+
+        .btn-newsletter {
+            @include tablet {
+                width: 100%;
+            }
+
+            &:hover {
+                color: $color_3;
+                background-color: $background-color_2;
+                opacity: 1;
+            }
+        }
+    }
+}

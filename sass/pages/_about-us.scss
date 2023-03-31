@@ -1,0 +1,77 @@
+.abour__heading h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    color: var(--secundario);
+    margin-bottom: 5rem;
+}
+
+.about-container {
+    padding: 5rem 0 10rem 0;
+}
+
+.about__grid-container {
+    display: grid;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+
+    @include tablet {
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+    }
+}
+
+.about__grid-container .about-grid__img {
+    order: 1;
+    height: 600px;
+    box-shadow: 1px 1px 3px 3px var(--secundario);
+    border-radius: 10px;
+    width: auto;
+    background-color: #fff;
+    background-size: cover;
+    background-image: url('../media/img/about-us/move-it.gif');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @include tablet {
+        width: 100%;
+    }
+}
+
+.about__grid-container .about-grid__txt {
+    order: 2;
+    padding: 3rem 3rem;
+}
+
+.about-grid__txt p {
+    color: var(--secundario);
+    font-size: 2.3rem;
+    line-height: 1.6;
+    margin: 2rem 0;
+    text-align: justify;
+
+    @include tablet {
+        text-align: start;
+    }
+}
+
+.about-grid__txt .push-foward {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+
+    @include tablet {
+        text-align: start;
+    }
+}
+
+.push-foward:hover {
+    color: var(--flex);
+    cursor: crosshair;
+}

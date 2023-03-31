@@ -1,0 +1,18 @@
+section.mousepad-hero {
+    width: auto;
+    height: fit-content;
+
+    article.mousepad-hero__imagen {
+        width: 100%;
+        min-height: 60rem;
+        background-image: url('/media/img/mousepad/mousepad-hero.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center 20%;
+        overflow: hidden;
+
+        @include mobile {
+            height: 20rem;
+        }
+    }
+}

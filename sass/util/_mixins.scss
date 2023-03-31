@@ -1,0 +1,15 @@
+// MediaQueries
+
+// Desktop first
+
+@mixin mobile {
+    @media screen and (max-width: 580px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 992px) {
+        @content;
+    }
+}
