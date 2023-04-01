@@ -18,6 +18,11 @@ $background-color_1: var(--footer-clr);
     justify-content: flex-end;
     align-items: center;
 
+    @include tablet {
+        max-width: 100%;
+        justify-content: center;
+    }
+
     >a {
         >i {
             color: $color_1;

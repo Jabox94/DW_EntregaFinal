@@ -12,6 +12,7 @@
 @import './layouts/products';
 @import './layouts/products--grid';
 @import './layouts/footer';
+@import './layouts/hero';
 
 // Components
 @import './components/buttons';
@@ -19,8 +20,6 @@
 
 // Pages
 @import './pages/home';
-@import './pages/mice';
-@import './pages/mousepad';
 @import './pages/about-us';
 @import './pages/contact-us';
 @import './pages/news';

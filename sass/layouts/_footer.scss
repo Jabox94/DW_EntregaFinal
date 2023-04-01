@@ -18,7 +18,6 @@ $background-color_3: blue;
     @include tablet {
         width: auto;
         height: fit-content;
-        background-image: url(../media/img/1ZephyrGear/brand-logo-bg.png);
         background-repeat: repeat-y;
         background-size: contain;
         height: auto;
@@ -34,6 +33,8 @@ $background-color_3: blue;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+
+    // Hacer el modo tablet, que en display block queda raro
 
     @include tablet {
         padding: 0 2rem;

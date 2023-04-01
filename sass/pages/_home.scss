@@ -6,24 +6,6 @@ $background-color_1: var(--blanco);
 $background-color_2: var(--primario);
 $background-color_3: rgba(0, 0, 0, 0.05);
 
-.index-hero {
-    width: 100%;
-}
-
-.index-hero-contenedor {
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    background-image: url('../media/img/index/index-hero.webp');
-    background-size: cover;
-    background-position: center center;
-    min-height: 40rem;
-
-    @include mobile {
-        height: 20rem;
-    }
-}
-
 .title-grid-container {
     h1 {
         font-size: 2.8rem;
