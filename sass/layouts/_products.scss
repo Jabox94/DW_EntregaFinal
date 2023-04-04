@@ -1,18 +1,28 @@
 main.main-content-products {
     width: 90%;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3rem 0;
+    text-align: center;
+
+    @include desktop {
+        grid-template-columns: 1fr 4fr;
+    }
 
     .products-content-container {
+        grid-area: 3/4/1/2;
         padding: 2rem;
         width: auto;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
-        display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: auto;
         gap: 2rem;
+        background-color: var(--blanco);
+        border: 1px solid #bbbbbb;
+        border-radius: 15px;
 
     }
 
@@ -22,7 +32,7 @@ main.main-content-products {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        border-bottom: 2px solid var(--brand-clr);
+        border-radius: 10px;
 
         @include desktop {
             flex-direction: row;
@@ -30,36 +40,50 @@ main.main-content-products {
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            padding: 0 5rem;
+            padding: 3rem 5rem;
+        }
+
+        .products__label-input {
+            width: fit-content;
+            align-items: center;
+            margin: 1rem 2rem;
+            filter: invert(1);
+            color: var(--blanco);
+
+            >label {
+                font-size: 1.6rem;
+                text-align: center;
+                width: 100%;
+            }
+
+            >select {
+                height: 5rem;
+                font-weight: bolder;
+                text-align: center;
+                width: 15rem;
+
+                @include desktop {
+                    width: 100%;
+                }
+            }
         }
 
     }
-}
 
+    .aside-products {
+        display: none;
+        border-radius: 15px;
+        height: 40rem;
+        background-color: var(--blanco);
+        border: 1px solid #bbbbbb;
 
-.products-content-heading {
-    .products__label-input {
-        width: fit-content;
-        align-items: center;
-        margin: 1rem 2rem;
-        filter: invert(1);
-        color: $color_1;
-
-        >label {
-            font-size: 1.6rem;
-            text-align: center;
-            width: 100%;
-        }
-
-        >select {
-            height: 5rem;
-            font-weight: bolder;
-            text-align: center;
-            width: 15rem;
-
-            @include desktop {
-                width: 100%;
-            }
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            text-align: start;
+            padding: 0 3rem;
         }
     }
 }

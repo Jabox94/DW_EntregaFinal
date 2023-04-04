@@ -12,9 +12,11 @@
     width: 100%;
     min-height: 30rem;
     overflow: hidden;
+    border-radius: 10px;
 
     @include desktop {
-        min-height: 80rem;
+        min-height: 70rem;
+        border-radius: 0;
     }
 }
 
@@ -28,12 +30,12 @@
     background-image: url('../../media/img/mice/mice-hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 30%;
+    background-position: center 40%;
 }
 
 .mousepad__hero {
     background-image: url('../../media/img/mousepad/mousepad-hero.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 20%;
+    background-position: center 40%;
 }
