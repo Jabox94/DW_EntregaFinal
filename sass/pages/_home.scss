@@ -43,7 +43,12 @@ $background-color_3: rgba(0, 0, 0, 0.05);
 
         .gallery__big {
             width: 80%;
-            margin: 1rem 0;
+            margin: 0 auto;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         p {
@@ -90,6 +95,16 @@ $background-color_3: rgba(0, 0, 0, 0.05);
     gap: 1rem;
     justify-content: center;
     align-items: center;
+
+    div {
+        height: auto;
+        width: fit-content;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
 }
 
 .header__vendor-name {
