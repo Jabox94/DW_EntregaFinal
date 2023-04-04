@@ -18,19 +18,19 @@ main.main-content-products {
 
     .products-content-heading {
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
-        justify-content: space-between;
-        width: 100%;
+        justify-content: center;
         border-bottom: 2px solid var(--brand-clr);
-        padding: 0 5rem;
 
-        @include mobile {
-            display: flex;
-            flex-wrap: wrap;
+        @include desktop {
+            flex-direction: row;
+            flex-wrap: nowrap;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 0 5rem;
         }
 
     }
@@ -48,19 +48,16 @@ main.main-content-products {
         >label {
             font-size: 1.6rem;
             text-align: center;
-
-            @include mobile {
-                width: 100%;
-            }
+            width: 100%;
         }
 
         >select {
-            width: 15rem;
             height: 5rem;
             font-weight: bolder;
             text-align: center;
+            width: 15rem;
 
-            @include mobile {
+            @include desktop {
                 width: 100%;
             }
         }

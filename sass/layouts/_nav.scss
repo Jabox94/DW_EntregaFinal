@@ -62,13 +62,13 @@ nav .active {
 }
 
 ul.navbar-nav {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    text-align: center;
+    margin: auto;
+    width: 80%;
 
-    @include tablet {
-        text-align: center;
-        margin: auto;
-        width: 80%;
+    @include desktop {
+        width: 100%;
+        padding: 0;
+        margin: 0;
     }
 }

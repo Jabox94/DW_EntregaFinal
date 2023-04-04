@@ -11,16 +11,16 @@ $background-color_1: var(--footer-clr);
 }
 
 .header__social {
-    max-width: 85%;
+    max-width: 100%;
+    justify-content: center;
     height: fit-content;
     padding: 2rem 1rem;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 
-    @include tablet {
-        max-width: 100%;
-        justify-content: center;
+    @include desktop {
+        max-width: 85%;
+        justify-content: flex-end;
     }
 
     >a {

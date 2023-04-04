@@ -50,7 +50,7 @@ main.contact-us {
     }
 
     .btn-indeed {
-        background-color: $background-color_1;
+        background-color: var(--brand-clr);
         color: $color_2;
         text-align: center;
         border: 0;
@@ -60,12 +60,12 @@ main.contact-us {
         padding: 2rem;
         font-size: 2rem;
 
-        @include mobile {
-            background-color: var(--brand-clr);
-        }
-
         &:hover {
             background-color: $background-color_2;
+        }
+
+        @include desktop {
+            background-color: $background-color_1;
         }
     }
 }
