@@ -52,6 +52,10 @@
 
             span {
                 color: var(--brand-clr);
+
+                &:hover {
+                    text-decoration: underline;
+                }
             }
 
             @include desktop {

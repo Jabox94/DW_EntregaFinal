@@ -1,16 +1,8 @@
-$color_1: var(--title-clr);
-$color_2: var(--secundario);
-$color_3: var(--primario);
-$font-family_1: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-$background-color_1: var(--blanco);
-$background-color_2: var(--primario);
-$background-color_3: rgba(0, 0, 0, 0.05);
-
 .to-chart__title {
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: $font-family_1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .to-chart__size {
@@ -27,14 +19,14 @@ $background-color_3: rgba(0, 0, 0, 0.05);
 
 .to-chart__sizeholder {
     width: fit-content;
-    background-color: $background-color_3;
+    background-color: rgba(0, 0, 0, 0.05);
     border: 2px solid var(--primario);
     border-radius: 20px;
 
     p {
         margin: auto;
         padding: 1rem;
-        color: $color_3;
+        color: var(--primario);
     }
 
     &:hover {
@@ -55,13 +47,13 @@ $background-color_3: rgba(0, 0, 0, 0.05);
 
     .newPrice {
         font-size: 4rem;
-        color: $color_3;
+        color: var(--primario);
     }
 
     .old-price {
         font-size: 2rem;
         text-decoration: line-through;
-        color: $color_1;
+        color: var(--title-clr);
     }
 }
 

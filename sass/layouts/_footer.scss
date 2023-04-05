@@ -1,16 +1,9 @@
-$color_1: var(--secundario);
-$color_2: var(--blanco);
-$color_3: var(--band-clr);
-$background-color_1: var(--footer-clr);
-$background-color_2: var(--bg-clr);
-$background-color_3: blue;
-
 /* Footer */
 .footer {
     width: auto;
     height: fit-content;
-    color: $color_1;
-    background-color: $background-color_1;
+    color: var(--secundario);
+    background-color: var(--footer-clr);
     background-repeat: repeat;
     background-position: center center;
     padding-top: 5rem;
@@ -64,7 +57,7 @@ $background-color_3: blue;
 
                 &:hover {
                     list-style: georgian;
-                    color: $color_2;
+                    color: var(--blanco);
                 }
             }
         }
@@ -72,7 +65,7 @@ $background-color_3: blue;
         >h4 {
             width: 90%;
             height: auto;
-            color: $color_1;
+            color: var(--secundario);
             font-size: 3rem;
             font-weight: 700;
             margin: 0 auto;
@@ -117,8 +110,8 @@ $background-color_3: blue;
             margin: 0 auto;
             border: 0;
             border-radius: 10px;
-            color: $color_1;
-            background-color: $background-color_2;
+            color: var(--secundario);
+            background-color: var(--bg-clr);
             padding: 2rem;
             text-transform: capitalize;
 
@@ -143,7 +136,7 @@ $background-color_3: blue;
 
         p {
             width: 100%;
-            color: $color_1;
+            color: var(--secundario);
             font-size: 2rem;
             line-height: 1.2;
             margin: 0;
@@ -165,8 +158,8 @@ $background-color_3: blue;
             }
 
             &:hover {
-                color: $color_3;
-                background-color: $background-color_2;
+                color: var(--band-clr);
+                background-color: var(--bg-clr);
                 opacity: 1;
             }
         }

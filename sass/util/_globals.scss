@@ -1,13 +1,10 @@
-$font-family_1: var(--fuentePrincipal);
-$background-color_1: var(--bg-clr);
-
 /* DayMode - LightMode */
 html {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-size: 61.5%;
-    font-family: $font-family_1;
+    font-family: var(--fuentePrincipal);
 }
 
 * {
@@ -24,8 +21,8 @@ html {
 
 body {
     font-size: 16px;
-    background-color: $background-color_1;
-    font-family: $font-family_1;
+    background-color: var(--bg-clr);
+    font-family: var(--fuentePrincipal);
     background: rgb(255, 255, 255);
     background: -moz-linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(201, 215, 233, 1) 100%);
     background: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(201, 215, 233, 1) 100%);

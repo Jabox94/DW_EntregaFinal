@@ -2,6 +2,8 @@
 @import './util/globals';
 @import './util/variables';
 @import './util/mixins';
+@import './util/keyframes';
+
 
 // Bases
 @import './bases/typography';
@@ -14,10 +16,10 @@
 @import './layouts/footer';
 @import './layouts/hero';
 @import './layouts/to-chart';
+@import './layouts/sldier';
 
 // Components
 @import './components/buttons';
-@import './components/forms';
 
 // Pages
 @import './pages/home';

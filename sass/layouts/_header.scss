@@ -1,11 +1,5 @@
-$color_1: var(--secundario);
-$color_2: #1877f2;
-$color_3: #1da1f2;
-$color_4: violet;
-$background-color_1: var(--footer-clr);
-
 .header {
-    background-color: $background-color_1;
+    background-color: var(--footer-clr);
     width: 100%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
@@ -25,7 +19,7 @@ $background-color_1: var(--footer-clr);
 
     >a {
         >i {
-            color: $color_1;
+            color: var(--secundario);
             display: flex;
             justify-content: space-between;
             font-size: 2.3rem;
@@ -36,18 +30,18 @@ $background-color_1: var(--footer-clr);
 
 .bi-facebook {
     &:hover {
-        color: $color_2;
+        color: #1877f2;
     }
 }
 
 .bi-twitter {
     &:hover {
-        color: $color_3;
+        color: #1da1f2;
     }
 }
 
 .bi-instagram {
     &:hover {
-        color: $color_4;
+        color: violet;
     }
 }
