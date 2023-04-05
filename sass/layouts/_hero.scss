@@ -13,6 +13,13 @@
     min-height: 30rem;
     overflow: hidden;
     border-radius: 10px;
+    image-rendering: optimizeSpeed;
+
+
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 40%;
 
     @include desktop {
         min-height: 70rem;
@@ -22,20 +29,20 @@
 
 .index__hero {
     background-image: url('../../media/img/index/index-hero.webp');
-    background-size: cover;
     background-position: center center;
 }
 
 .mice__hero {
     background-image: url('../../media/img/mice/mice-hero.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center 40%;
 }
 
 .mousepad__hero {
     background-image: url('../../media/img/mousepad/mousepad-hero.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
     background-position: center 40%;
+}
+
+.iniside__hero {
+    background-image: url('../../media/img/inside/inside-hero.webp');
+    background-position: center 40%;
+    filter: blur(1px);
 }

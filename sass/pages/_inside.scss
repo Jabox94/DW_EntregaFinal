@@ -1,0 +1,108 @@
+.inside-content {
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    text-align: start;
+
+    position: relative;
+    bottom: 5rem;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+    gap: 3rem;
+
+    @include desktop {
+        text-align: center;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    >section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        background-color: var(--blanco);
+        padding: 1rem 3rem;
+
+        border-radius: 10px;
+        box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.31);
+        -webkit-box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.31);
+        -moz-box-shadow: 5px 5px 13px 3px rgba(0, 0, 0, 0.31);
+
+        >h2 {
+            font-size: 2.3rem;
+        }
+    }
+
+    .content__heading {
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        a {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 2rem;
+            color: var(--negro);
+
+            span {
+                color: var(--brand-clr);
+            }
+
+            @include desktop {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .content__description {
+        .description__list {
+            list-style: square;
+            margin-left: 1.5rem;
+            text-align: start;
+        }
+    }
+
+    .content__payment {
+        h2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .payment__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+
+            li {
+                padding: 0 2rem;
+
+                i {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+
+    }
+
+    .content__to-chart {
+        padding: 3rem 2rem;
+    }
+}
