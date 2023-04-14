@@ -28,15 +28,71 @@
 }
 
 .index__hero {
-    background-image: url('../../media/img/index/index-hero.webp');
+    background-image: url('../../img/index/index-hero.webp');
     background-position: center center;
 }
 
 .mice__hero {
-    background-image: url('../../media/img/mice/mice-hero.webp');
+    background-image: url('../../img/mice/mice-hero.webp');
 }
 
 .mousepad__hero {
-    background-image: url('../../media/img/mousepad/mousepad-hero.webp');
+    background-image: url('../../img/mousepad/mousepad-hero.webp');
     background-position: center 40%;
+}
+
+// Inside.html
+.hero__slider {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @include desktop {
+        width: 100%;
+        height: 60rem;
+    }
+
+
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 400%;
+        height: auto;
+
+        animation: slider 30s infinite;
+
+        li {
+            width: 100%;
+            height: 60rem;
+
+            span {
+                display: none;
+            }
+        }
+
+        li:nth-child(1) {
+            background-image: url('../../img/inside/Slider-1.webp');
+            background-position: center 60%;
+            background-size: cover;
+        }
+
+        li:nth-child(2) {
+            background-image: url('../../img/inside/Slider-2.webp');
+            background-position: center 60%;
+            background-size: cover;
+        }
+
+        li:nth-child(3) {
+            background-image: url('../../img/inside/Slider-3.webp');
+            background-position: center 60%;
+            background-size: cover;
+        }
+
+        li:nth-child(4) {
+            background-image: url('../../img/inside/Slider-4.webp');
+            background-position: center 60%;
+            background-size: cover;
+        }
+    }
 }

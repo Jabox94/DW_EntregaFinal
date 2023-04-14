@@ -24,9 +24,9 @@ h4 {
 }
 
 p {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     line-height: 1.5;
-    color: var(--negro);
+    color: var(--paragraph);
 }
 
 ul {
@@ -36,11 +36,11 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--blanco);
+    color: var(--forth-clr);
 }
 
 a:hover {
-    color: var(--flex);
+    color: var(--third-clr);
 }
 
 a:visited {
@@ -50,4 +50,10 @@ a:visited {
 .more-here {
     margin: 0 1rem;
     font-size: 1.3rem;
+    color: var(--title-clr);
+}
+
+:root {
+    /* Font */
+    --fuentePrincipal: "Exo 2", sans-serif;
 }

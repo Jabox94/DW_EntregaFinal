@@ -1,3 +1,5 @@
+// Utilizado en inside.html y index.html
+
 .to-chart__title {
     font-size: 1.8rem;
     font-weight: 700;
@@ -6,11 +8,13 @@
 }
 
 .to-chart__size {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     text-align: start;
     align-items: center;
     justify-content: flex-start;
+    color: var(--paragraph);
 
     @include desktop {
         gap: 2rem;
@@ -18,22 +22,28 @@
 }
 
 .to-chart__sizeholder {
-    width: fit-content;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.05);
-    border: 2px solid var(--primario);
+    border: 2px solid var(--black);
     border-radius: 20px;
+
+    margin-bottom: 1rem;
+
+    @include desktop {
+        width: fit-content;
+    }
 
     p {
         margin: auto;
         padding: 1rem;
-        color: var(--primario);
+        color: var(--black);
     }
 
     &:hover {
-        background-color: var(--brand-clr);
+        background-color: var(--third-clr);
 
         p {
-            color: var(--blanco);
+            color: var(--white);
         }
     }
 }
@@ -41,37 +51,22 @@
 
 .to-chart__price {
     display: flex;
-    gap: 3rem;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+
+    @include desktop {
+        gap: 3rem;
+    }
 
     .newPrice {
         font-size: 4rem;
-        color: var(--primario);
+        color: var(--third-clr);
     }
 
     .old-price {
         font-size: 2rem;
         text-decoration: line-through;
-        color: var(--title-clr);
-    }
-}
-
-.btn-buynow {
-    width: fit-content;
-    margin: 1rem auto;
-    padding: 1rem 3rem;
-    border-radius: 20px;
-    background-color: var(--flex);
-    color: var(--blanco);
-
-    @include desktop {
-        background-color: var(--blanco);
-        color: var(--flex);
-
-        &:hover {
-            background-color: var(--flex);
-            color: var(--blanco);
-        }
+        color: var(--black);
     }
 }

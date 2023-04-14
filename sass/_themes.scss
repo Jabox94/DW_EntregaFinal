@@ -1,0 +1,7 @@
+body {
+    @include lightMode;
+}
+
+body.darkMode {
+    @include darkMode;
+}

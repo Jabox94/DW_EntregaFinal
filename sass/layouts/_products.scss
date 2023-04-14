@@ -20,7 +20,7 @@ main.main-content-products {
         flex-direction: column;
         margin: 0 auto;
         gap: 2rem;
-        background-color: var(--blanco);
+        background-color: var(--white);
         border: 1px solid #bbbbbb;
         border-radius: 15px;
 
@@ -48,7 +48,7 @@ main.main-content-products {
             align-items: center;
             margin: 1rem 2rem;
             filter: invert(1);
-            color: var(--blanco);
+            color: var(--white);
 
             >label {
                 font-size: 1.6rem;
@@ -74,7 +74,7 @@ main.main-content-products {
         display: none;
         border-radius: 15px;
         height: 40rem;
-        background-color: var(--blanco);
+        background-color: var(--white);
         border: 1px solid #bbbbbb;
 
         @include desktop {

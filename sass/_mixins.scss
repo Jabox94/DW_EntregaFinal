@@ -1,0 +1,98 @@
+// MediaQueries
+
+// Desktop first
+
+@mixin mobile {
+    @media screen and (max-width: 580px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 580px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width:1024px) {
+        @content;
+    }
+}
+
+@mixin lightMode {
+    /* Basics */
+    --white: #f5f5f5;
+    --black: #000;
+
+    /* Custom */
+    --title-clr: #4D46A6;
+
+    --prim-clr: #1877F2;
+    --sec-clr: #1aaaaf;
+    --third-clr: #F27C30;
+    --forth-clr: #F5EDCE;
+
+
+    --light: #F5EDCE;
+
+    // Only one use
+    --brand-clr: #275591;
+    --ft-hd-clr: #08267a;
+    --paragraph: #000;
+}
+
+@mixin darkMode {
+
+    /* Basics */
+
+    --white: #000;
+    --black: #dadada;
+
+    /* Custom */
+    --title-clr: #08b2b8;
+
+    --prim-clr: #2C3333;
+    --sec-clr: #395B64;
+    --third-clr: #A5C9CA;
+    --forth-clr: #E7F6F2;
+
+    --light: #F5EDCE;
+
+    // Only one use
+    --brand-clr: #275591;
+    --ft-hd-clr: transparent;
+    --paragraph: #fff;
+}
+
+@mixin bg-gradient-dark {
+    background: rgb(37, 37, 37);
+    background: linear-gradient(0deg, rgba(37, 37, 37, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+@mixin bg-gradient-light {
+    background-color: var(--bg-clr);
+    font-family: var(--fuentePrincipal);
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(201, 215, 233, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(201, 215, 233, 1) 100%);
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgba(201, 215, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e1e1e1", endColorstr="#c9d7e9", GradientType=1);
+}
+
+
+
+@mixin flex($dir, $hor, $ver) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $hor;
+    align-items: $ver;
+}
+
+@mixin grid ($col, $row, $flow, $gap) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-auto-flow: $flow;
+    gap: $gap;
+}

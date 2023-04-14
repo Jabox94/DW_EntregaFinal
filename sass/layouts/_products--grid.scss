@@ -39,7 +39,7 @@
     .product-heading {
         grid-area: 1/1/1/4;
         padding: 1rem 5rem;
-        border-bottom: 1px solid var(--brand-clr);
+        border-bottom: 1px solid var(--prim-clr);
         width: 100%;
 
         .card:nth-child(1) {
@@ -70,17 +70,17 @@
 
         .card__txt-content {
             padding: 2rem;
+
+            &:hover {
+                border: 1px solid var(--prim-clr);
+                border-radius: 10px;
+                cursor: pointer;
+            }
         }
 
         >img {
             width: 100%;
             padding: 1rem;
-
-            &:hover {
-                border: 1px solid var(--brand-clr);
-                border-radius: 10px;
-                cursor: pointer;
-            }
         }
     }
 }

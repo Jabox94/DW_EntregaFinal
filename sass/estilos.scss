@@ -1,12 +1,11 @@
 // Utilities
-@import './util/globals';
-@import './util/variables';
-@import './util/mixins';
-@import './util/keyframes';
+@import './mixins';
+@import './globals';
+@import './keyframes';
+@import './themes';
 
-
-// Bases
-@import './bases/typography';
+// Typography
+@import './typography';
 
 // Layouts
 @import './layouts/header';
@@ -16,17 +15,12 @@
 @import './layouts/footer';
 @import './layouts/hero';
 @import './layouts/to-chart';
-@import './layouts/sldier';
 
 // Components
-@import './components/buttons';
+@import './buttons';
 
 // Pages
 @import './pages/home';
 @import './pages/about-us';
 @import './pages/contact-us';
-@import './pages/news';
 @import './pages/inside';
-
-// Themes
-@import './Themes/darkmode';

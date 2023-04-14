@@ -2,8 +2,8 @@
 .footer {
     width: auto;
     height: fit-content;
-    color: var(--secundario);
-    background-color: var(--footer-clr);
+    color: var(--forth-clr);
+    background-color: var(--ft-hd-clr);
     background-repeat: repeat;
     background-position: center center;
     padding-top: 5rem;
@@ -19,7 +19,7 @@
     width: auto;
     height: fit-content;
     margin: auto;
-    padding: 5rem;
+    padding: 1.5rem 0;
 
     @include desktop {
         display: grid;
@@ -38,7 +38,7 @@
             padding: 0;
 
             >li {
-                font-size: 3rem;
+                font-size: 2rem;
                 font-weight: 400;
                 line-height: 3;
                 text-align: center;
@@ -47,7 +47,6 @@
                 word-wrap: break-word;
 
                 @include desktop {
-                    font-size: 2rem;
                     font-weight: 400;
                     line-height: 2;
                     text-align: left;
@@ -57,7 +56,7 @@
 
                 &:hover {
                     list-style: georgian;
-                    color: var(--blanco);
+                    color: var(--third-clr);
                 }
             }
         }
@@ -65,11 +64,11 @@
         >h4 {
             width: 90%;
             height: auto;
-            color: var(--secundario);
-            font-size: 3rem;
+            color: var(--forth-clr);
+            font-size: 2.4rem;
             font-weight: 700;
             margin: 0 auto;
-            border-bottom: solid 2px var(--bg-clr);
+            border-bottom: solid 2px var(--third-clr);
             text-align: center;
 
             @include desktop {
@@ -94,10 +93,7 @@
     }
 
     form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, center, center);
         margin-top: 4rem;
 
         @include desktop {
@@ -110,8 +106,8 @@
             margin: 0 auto;
             border: 0;
             border-radius: 10px;
-            color: var(--secundario);
-            background-color: var(--bg-clr);
+            color: var(--third-clr);
+            background-color: var(--white);
             padding: 2rem;
             text-transform: capitalize;
 
@@ -136,11 +132,11 @@
 
         p {
             width: 100%;
-            color: var(--secundario);
-            font-size: 2rem;
-            line-height: 1.2;
-            margin: 0;
-            margin-left: 1rem;
+            color: var(--forth-clr);
+            font-size: 1.8rem;
+            line-height: 2;
+            margin: 1rem;
+            text-transform: uppercase;
         }
 
         .btn-newsletter {
@@ -158,8 +154,8 @@
             }
 
             &:hover {
-                color: var(--band-clr);
-                background-color: var(--bg-clr);
+                color: var(--white);
+                background-color: var(--prim-clr);
                 opacity: 1;
             }
         }

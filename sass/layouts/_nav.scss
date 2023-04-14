@@ -1,5 +1,5 @@
 nav .active {
-    background-color: var(--primario);
+    background-color: var(--prim-clr);
     color: var(--blanco);
     border-radius: 12px;
 }
@@ -22,7 +22,7 @@ nav .active {
 
         .logo__image {
             grid-area: 1 / 1 / 4 / 2;
-            background-image: url('../../media/img/logo/logo-web.webp');
+            background-image: url('../../img/logo/logo-web.webp');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center center;
@@ -33,7 +33,7 @@ nav .active {
 .logo {
     .logo__brandName {
         grid-area: 1 / 2 / 2 / 3;
-        border-left: 2px solid #000;
+        border-left: 2px solid var(--black);
         padding: 0 1rem;
 
         p {
@@ -45,14 +45,31 @@ nav .active {
 
     .logo__tagline {
         grid-area: 2 / 2 / 3 / 3;
-        border-left: 2px solid #000;
-        text-align: center;
+        border-left: 2px solid var(--black);
+        text-align: start;
 
         p {
+            margin-left: 1rem;
             font-size: 1.6rem;
             font-size: 600;
             font-style: oblique;
             line-height: 1.4;
+        }
+    }
+}
+
+body.darkMode {
+    nav {
+        .logo {
+            filter: invert(1);
+
+            .logo__brandName {
+                filter: invert(1);
+            }
+
+            .logo__tagline {
+                filter: invert(1);
+            }
         }
     }
 }
