@@ -1,87 +1,125 @@
-nav .active {
-    background-color: var(--prim-clr);
-    color: var(--blanco);
-    border-radius: 12px;
+body.darkMode {
+    .navegacion-principal {
+        .contenedor {
+            .nav__logo {
+                filter: invert(1);
+            }
+        }
+    }
 }
 
 .navegacion-principal {
     min-width: 100%;
-    min-height: 12rem;
+    height: fit-content;
 
-    .container-fluid {
-        margin: auto;
+    .contenedor {
         width: 100%;
-        max-width: 140rem;
-    }
+        padding: 1rem 2rem;
 
-    .logo {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 20px;
+        @include flex(column, space-between, center);
 
-        .logo__image {
-            grid-area: 1 / 1 / 4 / 2;
-            background-image: url('../../img/logo/logo-web.webp');
+        @include tablet {
+            max-width: 140rem;
+            @include flex(row, space-between, center);
+        }
+
+        .nav__logo {
+            width: 100%;
+            min-height: 70px;
+
+            background-image: url('../../img/logo/logo-web.png');
             background-size: contain;
             background-repeat: no-repeat;
-            background-position: center center;
-        }
-    }
-}
 
-.logo {
-    .logo__brandName {
-        grid-area: 1 / 2 / 2 / 3;
-        border-left: 2px solid var(--black);
-        padding: 0 1rem;
-
-        p {
-            font-weight: normal;
-            font-size: 2rem;
-            color: var(--brand-clr);
-        }
-    }
-
-    .logo__tagline {
-        grid-area: 2 / 2 / 3 / 3;
-        border-left: 2px solid var(--black);
-        text-align: start;
-
-        p {
-            margin-left: 1rem;
-            font-size: 1.6rem;
-            font-size: 600;
-            font-style: oblique;
-            line-height: 1.4;
-        }
-    }
-}
-
-body.darkMode {
-    nav {
-        .logo {
-            filter: invert(1);
-
-            .logo__brandName {
-                filter: invert(1);
+            @include mobile {
+                background-position: center center;
             }
 
-            .logo__tagline {
-                filter: invert(1);
+            @include tablet {
+                background-position: start center;
+            }
+
+            @include desktop {
+                width: 33.3%;
+            }
+
+            p {
+                display: none;
             }
         }
+
+        .nav__menu {
+            width: 20%;
+            height: 100%;
+            // background-color: aquamarine;
+
+            @include flex(row, center, flex-end);
+
+            @include desktop {
+                display: none;
+            }
+
+
+        }
+
+        .nav__navbar {
+            display: none;
+
+
+            @include desktop {
+                width: auto;
+                height: 100%;
+                @include flex(row, space-between, baseline);
+                margin: 0;
+                gap: 1rem;
+                padding: 1rem 0;
+            }
+
+            li {
+                color: var(--black);
+                font-size: 1.8rem;
+                font-weight: 400;
+                padding: 1rem;
+                border-radius: 20px;
+
+                a {
+                    color: var(--black);
+                    padding: 0 1rem;
+
+                    &:hover {
+                        transition: all 0.5s ease-in;
+                        color: var(--forth-clr);
+                    }
+                }
+
+                &:hover,
+                &.active {
+                    transition: all 0.5s ease-in;
+                    background-color: var(--title-clr);
+
+                    a {
+                        color: var(--forth-clr);
+                    }
+                }
+            }
+
+        }
+
     }
 }
 
-ul.navbar-nav {
-    text-align: center;
-    margin: auto;
-    width: 80%;
+.nav__menu {
+    .menu__button {
+        padding: 1rem;
+        font-size: 2.4rem;
+        background-color: var(--prim-clr);
+        color: var(--forth-clr);
+        border-radius: 500px;
 
-    @include desktop {
-        width: 100%;
-        padding: 0;
-        margin: 0;
+        &:hover {
+            color: var(--white);
+            background-color: var(--black);
+            opacity: 1;
+        }
     }
 }

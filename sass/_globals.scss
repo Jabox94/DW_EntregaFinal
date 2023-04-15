@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    transition: all 1s ease;
     font-size: 16px;
     background-color: var(--bg-clr);
     font-family: var(--fuentePrincipal);
@@ -13,6 +14,7 @@ body {
 }
 
 body.darkMode {
+    transition: all 1s ease;
     @include bg-gradient-dark;
 }
 
@@ -31,4 +33,9 @@ body.darkMode {
 
 img {
     width: 100%;
+}
+
+button {
+    border: 0;
+    outline: 0;
 }

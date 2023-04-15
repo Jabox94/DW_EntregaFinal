@@ -43,49 +43,53 @@
                 <i class="bi bi-instagram"></i>
             </a>
         </div>
+        <div class="header__darkmode">
+            <button class="darkmode-toggle" id="dm-toggle">
+                <i class="bi bi-sun-fill"></i>
+                <i class="bi bi-moon"></i>
+            </button>
+        </div>
     </header>
 
     <!-- Navbar con boostrap -->
-    <nav class="navegacion-principal navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-            <a class="logo navbar-brand" href="./index.html">
-                <div class="logo__image"></div>
-                <div class="logo__brandName">
-                    <p>Flows <b>Forward</b></p>
+    <nav class="navegacion-principal">
+        <div class="contenedor">
+            <div class="nav__logo">
+                <div class="logo__image">
+                    <p>logo</p>
                 </div>
-                <div class="logo__tagline">
-                    <p>Keep tracking</p>
-                </div>
-            </a> <!--Cierre de logo-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav justify-content-end align-text-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" aria-current="page" href="./index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./html/Products/mice.html">Mice</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./html/Products/mousepad.html">Mousepad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./html/info-about-us/about-us.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="./html/info-about-us/contacts.html">Contact us</a>
-                    </li>
-                </ul>
             </div>
+            <div class="nav__menu">
+                <button class="menu__button">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
+            </div>
+
+            <ul class="nav__navbar">
+                <li class="nav__item active">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./html/Products/mice.html">Mice</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./html/Products/mousepad.html">Mousepad</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./html/info-about-us/about-us.html">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="./html/info-about-us/contacts.html">Contact us</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Imagen principal de la pagina de bienvenida -->
     <section class="hero">
-        <div class="hero__imagen index__hero"></div>
+        <div class="hero__imagen index__hero">
+            <p>Hero imagen</p>
+        </div>
     </section>
 
     <!-- Producto estrella -->
@@ -265,7 +269,7 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="./js/darkmode.js"></script>
 </body>
 
 </html>

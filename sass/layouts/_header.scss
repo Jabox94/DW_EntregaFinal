@@ -2,24 +2,33 @@
     background-color: var(--ft-hd-clr);
     width: 100%;
     box-shadow: 1px 5px 8px 2px rgba(0, 0, 0, 0.7);
+
+    @include flex(row, center, center);
+
+    @include desktop {
+        @include flex(row, space-evenly, center);
+    }
+
+    &--light {
+        box-shadow: 1px 1px 5px 1px var(--third-clr);
+    }
+
 }
 
-body.darkMode {
-    .header {
-        box-shadow: 1px 1px 5px 1px var(--light);
-    }
-}
+body.darkMode {}
 
 .header__social {
-    max-width: 100%;
+    order: 2;
+    max-width: 80%;
     justify-content: center;
     height: fit-content;
     padding: 2rem 1rem;
     display: flex;
     align-items: center;
+    gap: 2rem;
 
     @include desktop {
-        max-width: 85%;
+        max-width: 75%;
         justify-content: flex-end;
     }
 
@@ -29,7 +38,7 @@ body.darkMode {
             display: flex;
             justify-content: space-between;
             font-size: 2.3rem;
-            margin: 0 1rem;
+            transition: all 0.6s linear;
         }
     }
 }
@@ -49,5 +58,97 @@ body.darkMode {
 .bi-instagram {
     &:hover {
         color: violet;
+    }
+}
+
+
+.header__darkmode {
+    order: 1;
+    width: 0;
+    height: 0;
+    @include flex(row, flex-end, center);
+
+    @include desktop {
+        width: 25%;
+    }
+
+    .darkmode-toggle {
+        height: 5rem;
+        width: 5rem;
+        padding: 1.2rem;
+
+
+        position: fixed;
+        bottom: 20px;
+        right: 10px;
+
+        background-color: var(--sec-clr);
+        color: var(--white);
+        font-size: 2rem;
+        border-radius: 50%;
+
+        @include tablet {
+            padding: 2rem;
+        }
+
+        @include desktop {
+            position: relative;
+            top: 50%;
+            height: 5rem;
+            width: 5rem;
+            font-size: 2.4rem;
+            background-color: transparent;
+            color: var(--forth-clr);
+            border-radius: 20rem;
+
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                color: var(--forth-clr);
+                background-color: var(--title-clr);
+            }
+
+
+        }
+
+        i {
+            height: 100%;
+            width: auto;
+            position: absolute;
+            top: 1rem;
+            left: 1.5rem;
+
+            @include desktop {
+                transition: all 0.6s ease;
+                top: 1.1rem;
+                left: 1.3rem;
+            }
+
+            &:last-child {
+                opacity: 0;
+                transform: rotate(80deg);
+            }
+        }
+
+        &.dark--on {
+            i {
+                &:first-child {
+                    transition: all 0.6s ease;
+                    opacity: 0;
+                    transform: rotate(80deg);
+                }
+
+                &:last-child {
+                    transition: all 0.6s ease;
+                    opacity: 1;
+                    transform: rotate(0deg);
+                }
+            }
+
+        }
     }
 }

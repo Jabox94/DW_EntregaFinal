@@ -7,10 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="We are an e-sports focused brand located in Montevideo Uruguay. Our mission is to be your best ally in your most difficult battles.">
+        content="A good warrior must know the battlefield and its equipment to perfection, so you must equip yourself with the best mousepads and never stop advancing.">
     <meta name="keywords"
         content="Flow forward, Flows Forward, Flow foward, flow foward, flou foguard, flou, ff, flow foward uruguay, flou foguard uruguay, guard, flow forward uruguay">
-
     <!-- Boostrap 5.0.2 meta tag -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -43,47 +42,53 @@
                 <i class="bi bi-instagram"></i>
             </a>
         </div>
-    </header>
-    <!-- Nav -->
-    <nav class="navegacion-principal navbar navbar-expand-lg navbar-light bg-transparent">
-        <div class="container-fluid">
-            <a class="logo navbar-brand" href="../../index.html">
-                <div class="logo__image"></div>
-                <div class="logo__brandName">
-                    <p>Flows <b>Forward</b></p>
-                </div>
-                <div class="logo__tagline">
-                    <p>Keep tracking</p>
-                </div>
-            </a> <!--Cierre de logo-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+        <div class="header__darkmode">
+            <button class="darkmode-toggle" id="dm-toggle">
+                <i class="bi bi-sun-fill"></i>
+                <i class="bi bi-moon"></i>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav justify-content-end align-text-center">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" aria-current="page" href="../../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="../Products/mice.html">Mice</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" href="../Products/mousepad.html">Mousepad</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="../info-about-us/about-us.html">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="../info-about-us/contacts.html">Contact us</a>
-                    </li>
-                </ul>
+        </div>
+    </header>
+
+    <!-- Navbar con boostrap -->
+    <nav class="navegacion-principal">
+        <div class="contenedor">
+            <div class="nav__logo">
+                <div class="logo__image">
+                    <p>logo</p>
+                </div>
             </div>
+            <div class="nav__menu">
+                <button class="menu__button">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
+            </div>
+
+            <ul class="nav__navbar">
+                <li class="nav__item">
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../Products/mice.html">Mice</a>
+                </li>
+                <li class="nav__item active">
+                    <a href="../Products/mousepad.html">Mousepad</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../info-about-us/about-us.html">About us</a>
+                </li>
+                <li class="nav__item">
+                    <a href="../info-about-us/contacts.html">Contact us</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <section class="hero">
-        <div class="hero__imagen mousepad__hero"></div>
+        <div class="hero__imagen mousepad__hero">
+            <p>Hero imagen</p>
+        </div>
     </section>
 
     <main class="main-content-products">
@@ -218,8 +223,6 @@
                                     Fast moving <br>
                                     Bottom: Non slip rubber. <br>
                                     Edge: Lower stitched <br>
-                                    4mm thickness <br>
-                                    Suitable for sweaty hands
                                 </p>
                             </a>
                         </div>
@@ -237,8 +240,6 @@
                                     Fast moving <br>
                                     Bottom: Non slip rubber. <br>
                                     Edge: Lower stitched <br>
-                                    4mm thickness <br>
-                                    Suitable for sweaty hands
                                 </p>
                             </a>
                         </div>
@@ -310,61 +311,6 @@
             <!-- grid-glass-content -->
         </div>
         <!-- Mice content contenedor -->
-
-        <aside class="aside-products contenedor">
-            <ul class="aside__filter-vendor">
-                <li>
-                    <h4>
-                        Vendor Name
-                    </h4>
-                </li>
-                <li>
-                    <input type="checkbox" name="Control">
-                    Gamesense
-                </li>
-                <li>
-                    <input type="checkbox" name="Genius">
-                    Genius
-                </li>
-                <li>
-                    <input type="checkbox" name="Try-vendor">
-                    Try
-                </li>
-                <li>
-                    <input type="checkbox" name="Alohe">
-                    Alohe
-                </li>
-                <li>
-                    <input type="checkbox" name="SkyPAD">
-                    SkyPAD
-                </li>
-            </ul>
-
-            <ul class="aside__filter-type">
-                <li>
-                    <h4>
-                        Type of mousepad
-                    </h4>
-                </li>
-                <li>
-                    <input type="checkbox" name="Glass">
-                    Glass
-                </li>
-                <li>
-                    <input type="checkbox" name="Cloth-soft">
-                    Soft Cloth
-                </li>
-                <li>
-                    <input type="checkbox" name="Rigid">
-                    High Friction Cloth
-                </li>
-                <li>
-                    <input type="checkbox" name="Speed">
-                    Cloth Speed
-                </li>
-            </ul>
-        </aside>
-        <!-- aside filter -->
     </main>
 
     <footer class="footer">
@@ -433,6 +379,7 @@
         crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../../js/darkmode.js"></script>
 </body>
 
 </html>
