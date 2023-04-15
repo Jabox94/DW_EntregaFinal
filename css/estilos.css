@@ -313,10 +313,12 @@ body.darkMode .navegacion-principal .contenedor .nav__logo {
 .navegacion-principal .contenedor {
   width: 100%;
   padding: 1rem 2rem;
+  gap: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 580px) {
   .navegacion-principal .contenedor {
@@ -328,7 +330,7 @@ body.darkMode .navegacion-principal .contenedor .nav__logo {
   }
 }
 .navegacion-principal .contenedor .nav__logo {
-  width: 100%;
+  width: 70%;
   min-height: 70px;
   background-image: url("../../img/logo/logo-web.png");
   background-size: contain;
@@ -367,6 +369,21 @@ body.darkMode .navegacion-principal .contenedor .nav__logo {
 }
 .navegacion-principal .contenedor .nav__navbar {
   display: none;
+  width: 0%;
+  height: 0%;
+}
+.navegacion-principal .contenedor .nav__navbar--active {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: var(--title-clr);
+  padding: 1rem 0;
+  border-radius: 20px;
 }
 @media screen and (min-width: 1024px) {
   .navegacion-principal .contenedor .nav__navbar {
@@ -382,15 +399,19 @@ body.darkMode .navegacion-principal .contenedor .nav__logo {
   }
 }
 .navegacion-principal .contenedor .nav__navbar li {
-  color: var(--black);
-  font-size: 1.8rem;
+  font-size: 1.3em;
   font-weight: 400;
   padding: 1rem;
   border-radius: 20px;
 }
 .navegacion-principal .contenedor .nav__navbar li a {
-  color: var(--black);
+  color: var(--white);
   padding: 0 1rem;
+}
+@media screen and (min-width: 1024px) {
+  .navegacion-principal .contenedor .nav__navbar li a {
+    color: var(--black);
+  }
 }
 .navegacion-principal .contenedor .nav__navbar li a:hover {
   transition: all 0.5s ease-in;
@@ -410,11 +431,17 @@ body.darkMode .navegacion-principal .contenedor .nav__logo {
   background-color: var(--prim-clr);
   color: var(--forth-clr);
   border-radius: 500px;
+  transition: all 0.3s linear;
+  transform: rotate(0deg);
+  opacity: 0.9;
 }
 .nav__menu .menu__button:hover {
-  color: var(--white);
-  background-color: var(--black);
   opacity: 1;
+}
+.nav__menu .menu__button--active {
+  background-color: var(--title-clr);
+  transition: all 0.3s linear;
+  transform: rotate(90deg);
 }
 
 main.main-content-products {
