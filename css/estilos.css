@@ -550,6 +550,14 @@ main.main-content-products .products-content-heading .products__label-input > se
   margin: 2rem auto;
   text-align: start;
 }
+.grid-content-container .product-card:hover {
+  transition: all 0.7s linear;
+  border: 1px solid var(--prim-clr);
+  border-radius: 10px;
+  cursor: pointer;
+  max-height: fit-content;
+  overflow: visible;
+}
 .grid-content-container .product-card .card__txt-content {
   height: fit-content;
   padding: 2rem;
@@ -562,20 +570,16 @@ main.main-content-products .products-content-heading .products__label-input > se
     max-height: 400px;
   }
 }
-.grid-content-container .product-card .card__txt-content:hover {
-  transition: all 0.7s linear;
-  border: 1px solid var(--prim-clr);
-  border-radius: 10px;
-  cursor: pointer;
-  max-height: fit-content;
-  overflow: visible;
-}
 .grid-content-container .product-card > img {
-  min-width: 100%;
-  height: 400px;
   width: 100%;
-  padding: 1rem;
+  height: auto;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .grid-content-container .product-card > img {
+    min-width: 100%;
+    height: 400px;
+  }
 }
 
 /* Footer */
@@ -1289,7 +1293,7 @@ main.contact-us {
   padding: 2rem;
 }
 .form_contact .btn-indeed {
-  background-color: var(--prim-clr);
+  background-color: var(--third-clr);
   color: var(--white);
   text-align: center;
   border: 0;
