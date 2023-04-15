@@ -24,27 +24,33 @@ body.darkMode {
             max-width: 140rem;
         }
 
+
         .nav__logo {
             width: 70%;
-            min-height: 70px;
-            background-image: url('../../img/logo/logo-web.png');
-            background-size: contain;
-            background-repeat: no-repeat;
-
-            @include mobile {
-                background-position: center center;
-            }
-
-            @include tablet {
-                background-position: start center;
-            }
+            height: auto;
 
             @include desktop {
                 width: 33.3%;
             }
 
-            p {
-                display: none;
+            .logo__image {
+                width: 100%;
+                min-height: 70px;
+                background-image: url('../../img/logo/logo-web.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+
+                @include mobile {
+                    background-position: center center;
+                }
+
+                @include tablet {
+                    background-position: start center;
+                }
+
+                p {
+                    display: none;
+                }
             }
         }
 
