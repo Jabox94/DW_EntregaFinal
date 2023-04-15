@@ -1,5 +1,5 @@
 .inside-content {
-    width: 80%;
+    width: 90%;
     height: fit-content;
     margin: 0 auto;
     text-align: start;
@@ -11,6 +11,7 @@
     @include grid(1fr, min-content, auto, 4rem);
 
     @include desktop {
+        width: 70%;
         text-align: center;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;

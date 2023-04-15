@@ -9,13 +9,11 @@ body {
     font-size: 16px;
     background-color: var(--bg-clr);
     font-family: var(--fuentePrincipal);
-    @include bg-gradient-light;
     box-sizing: inherit;
 }
 
 body.darkMode {
     transition: all 1s ease;
-    @include bg-gradient-dark;
 }
 
 .no-margin {

@@ -73,9 +73,9 @@ body.darkMode {}
     }
 
     .darkmode-toggle {
-        height: 5rem;
-        width: 5rem;
-        padding: 1.2rem;
+        height: 50px;
+        width: 50px;
+        z-index: 100;
 
 
         position: fixed;
@@ -84,18 +84,13 @@ body.darkMode {}
 
         background-color: var(--sec-clr);
         color: var(--white);
-        font-size: 2rem;
+        font-size: 2.5rem;
         border-radius: 50%;
 
-        @include tablet {
-            padding: 2rem;
-        }
-
         @include desktop {
-            position: relative;
-            top: 50%;
-            height: 5rem;
-            width: 5rem;
+            position: static;
+            width: 50px;
+            height: 50px;
             font-size: 2.4rem;
             background-color: transparent;
             color: var(--forth-clr);
@@ -115,23 +110,24 @@ body.darkMode {}
 
         }
 
-        i {
-            height: 100%;
-            width: auto;
-            position: absolute;
-            top: 1rem;
-            left: 1.5rem;
+        .icons {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-            @include desktop {
+            i {
+                position: absolute;
+                font-size: 2.5rem;
                 transition: all 0.6s ease;
-                top: 1.1rem;
-                left: 1.3rem;
+
+                &:last-child {
+                    opacity: 0;
+                    transform: rotate(80deg);
+                }
             }
 
-            &:last-child {
-                opacity: 0;
-                transform: rotate(80deg);
-            }
         }
 
         &.dark--on {

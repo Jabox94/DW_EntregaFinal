@@ -11,9 +11,13 @@ main.contact-us {
 .heading-contact-us {
     @include flex(column, center, center);
     gap: 2rem;
-    width: 40%;
+    width: 100%;
     height: fit-content;
-    margin: 0 auto;
+
+    @include desktop {
+        width: 50%;
+        margin: 0 auto;
+    }
 
     h1 {
         font-size: 4.5rem;
@@ -30,9 +34,13 @@ main.contact-us {
 }
 
 .form_contact {
-    width: 65%;
+    width: 100%;
     margin: 0 auto;
     color: var(--black);
+
+    @include desktop {
+        width: 65%;
+    }
 
     div {
         label {
