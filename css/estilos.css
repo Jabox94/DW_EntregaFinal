@@ -547,7 +547,7 @@ main.main-content-products .products-content-heading .products__label-input > se
   align-items: center;
   width: 80%;
   height: auto;
-  margin: 2rem 0;
+  margin: 2rem auto;
   text-align: start;
 }
 .grid-content-container .product-card .card__txt-content {
@@ -572,8 +572,10 @@ main.main-content-products .products-content-heading .products__label-input > se
 }
 .grid-content-container .product-card > img {
   min-width: 100%;
+  height: 400px;
   width: 100%;
   padding: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* Footer */
